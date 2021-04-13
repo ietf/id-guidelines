@@ -1,5 +1,15 @@
 # Guidelines to Authors of Internet-Drafts
 
+## Table of Contents
+  * [Introduction](#introduction)
+  * [Background](#background)
+  * [The Submission Process](#the-submission-process)
+  * [Content Considerations](#content-considerations)
+    * [Required Content](#required-content)
+  * [Format Considerations](#format-considerations)
+  * [References](#references)
+  * [Acknowledgments](#Acknowledgments)
+
 ## Introduction
 
 Internet-Drafts (I-Ds) are the basic work item of the IETF. They are the
@@ -32,8 +42,6 @@ expected to be familiar with and to apply the full guidance in this document.
 
 ## Background
 
-Internet-Drafts are managed through the IETF Datatracker [DATATRACKER]. 
-
 All versions of Internet-Drafts are kept in the Internet-Draft Archive
 [ARCHIVE]. Active versions of Internet-Drafts are also placed in the
 Internet-Draft Repository [REPOSITORY].
@@ -60,7 +68,25 @@ Even though Internet-Drafts are kept in the Archive, they are not an archival
 series, and should not be cited or quoted as anything other than "work in
 progress".
 
+
 ## The Submission Process
+
+Internet-Draft submissions are made using the IETF Datatracker's [DATATRACKER]
+submission tool [IDST]. The submission should be provided as XML source.
+XML2RFC Version 3 XML source [RFC 7991] is preferred, but Version 2 source
+[RFC 7749] will be accepted. If XML source is not available, a plain-text
+submission will be accepted.
+
+Currently, the submission tool will accept both an XML and plain-text
+submission, as well as PDF and PostScript versions of the document. In such
+submissions, the XML is authoritative, if present, otherwise the plain-text is
+authoritative. It is expected that the tool will change to allow only the
+submission of XML or plain text, but not both, and to not accept other formats.
+
+If XML source is submitted, the Datatracker will generate plain-text and place
+it in the Archive. If v3 source is submitted, the Datatracker will also 
+generate HTML and place it in the Archive. The Datatracker also presents
+on-demand generated html-ized views of the plain-text versions of I-Ds.
 
 ## Content Considerations
 
