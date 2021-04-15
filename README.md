@@ -274,6 +274,18 @@ in the Format section below.
       * References
       * Authors' Addresses
 
+- [ ] If the document uses [BCP 14] normative language, ensure the unchanged
+      boilerplate text from BPC 14 is present in the I-D, and that BCP 14
+      is normatively referenced.
+
+         * Note that BCP 14 is made up of both [RFC 2119]
+           and [RFC 8174], and they must be cited as described in the latter
+           document. Please use the boilerplate text exactly as specified in
+           RFC 8174.
+
+- [ ] If the I-D intends to obsolete or update existing RFCs, ensure there
+      is a "Summary of Changes" section.
+
 #### IPR-Related Notices
 
 [BCP 78] and [BCP 79] specify the IETF's Intellectual Property policies.
@@ -374,10 +386,11 @@ satisfactory abstract can be constructed in part from material from the
 Introduction section, but a good abstract will be shorter, less detailed, and
 broader in scope than the Introduction. Simply copying and pasting the first
 few paragraphs of the Introduction is tempting, but it generally results in an
-Abstract that is both incomplete and redundant.  An Abstract will typically be five to ten lines.  An Abstract of more than 20 lines or fewer than three lines is generally not acceptable.
+Abstract that is both incomplete and redundant.  An Abstract will typically be
+five to ten lines.  An Abstract of more than 20 lines or fewer than three lines
+is generally not acceptable.
 
-
-- [] Ensure the document contains an appropriate Abstract.
+- [ ] Ensure the Internet-Draft contains an appropriate Abstract.
 
 An Abstract should be complete in itself, so it should not contain no citations
 unless they are completely defined within the Abstract. Abbreviations appearing
@@ -467,7 +480,55 @@ publication of the document as an RFC.
 For more specific guidelines regarding structure and content for writing IANA
 Considerations sections, please see [RFC 8126] and [IANA].
 
+#### Summary of Changes
+
+As noted in the Abstract and Introduction sections above, the Abstract
+and Introduction must call out any RFCs an I-D intends to obsolete
+or update. There should also be a section providing greater detail about
+the changes
+
+- [ ] Ensure the I-D clearly summarizes any changes made from the RFCs
+      being updated or obsoleted.
+
+- [ ] Ensure any errata against RFCs that are being obsolated or updated
+      have been considered, and that the I-D clearly identifies those that
+      have been addressed.
+
 #### References
+
+A References section must be present and split into normative and informative
+sections.  For guidance, see [RFC 7322] and [REFERENCE].
+
+Normative and informative references to non-IETF documents are permitted.
+However, it is best to minimize such normative references, because assessing
+their status when the IETF document advances on the standards track is very
+difficult. It is important to use the exact title, author name(s),
+organization  and publication date. External specifications referenced by
+Internet-Standard-level Technical Specifications or Applicability Statements
+must be to open external standards, per [RFC 2026].
+
+- [ ] Ensure all needed references are present, and correctly identified
+      as normative or informative.
+
+- [ ] Verify that references is stable and resolvable.
+
+       A bare URI is not generally considered a stable reference.  For web-only
+       documents, adding a reference number, title , and/or an author will help
+       make the reference more stable.  See [RFC 7322] for specific guidance
+       about URIs in Internet-Drafts.  Judgment can be used here; the stability
+       of normative references is even more important than the stability of
+       informative references.
+
+- [ ] Verify that references to other Internet-Drafts use this format:
+      author, "title", name-version (work in progress), date. For instance:
+
+        Foo, "The Specific Subject", draft-foo-bar-specific-subject-00 (work
+        in progress, April 2021.
+
+Note that normative references to I-Ds will cause the referencing document to
+wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs.
+They may in some cases become a cluster of documents [CLUSTER] that will be
+published as RFCs simultaneously.
 
 #### Authors' Addresses
 
@@ -476,9 +537,111 @@ Considerations sections, please see [RFC 8126] and [IANA].
 
 ### Content Considerations
 
+#### Normative Language
+
+If [BCP 14] language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119,
+especially those in Sections 6 and 7, should be followed. "SHOULD" is
+especially problematic: it needs to be clear why SHOULD is used rather than
+MUST, and what the implications are of varying from the recommendation.
+
+#### Formal Languages
+
+- [ ] Verify that any use of formal languages conforms with the IESG statement
+      on the use of formal languages [IESG-FORMAL].
+
+Some particular points to observe are enumerated below.
+
+##### MIB modules
+
+All MIB modules should have correct syntax, so they should compile cleanly
+using the “smilint” tool, e.g.:
+
+          smilint -m -s -l 6 -i namelength-32
+
+An online service is available for MIB syntax checking at [LIBSMI]. This
+allows you to extract the MIB module from a document for your own local use,
+but you can also directly run a syntax check.
+
+You can also download the libsmi tools for local use. In most cases , there
+should be no errors or warnings present in the report. Please evaluate all
+diagnostic messages before assuming that they are OK. If in doubt, feel free
+to check on the ietfmibs@ietf.org mailing list or with the OPS ADs.
+
+- [ ] Ensure that MIB modules compile cleanly
+
+- [ ] Verify that I-D follows the guidelines in [RFC 4181] as updated by [RFC
+      4841].
+
+##### ABNF
+
+- [ ] Ensure all ABNF in the I-D compiles cleanly. A tool is available at
+      [ABNF-CHECK]. See [RFC 5234] for information about IETF ABNF.
+
+- [ ] If ABNF is used, ensure the I-D contains a normative reference to
+      [RFC 5234].
+
+##### XML
+
+Protocol specifications that use XML should always use well-formed XML at a
+minimum. Sample XML instances included in a specification have to be
+well-formed, and if the XML is supposed to be valid (according to the current
+W3C definition of validity), the samples must reference and be validated using
+an appropriate XML Schema, DTD, or another standard validation mechanism that
+is structurally and syntactically correct.
+
+Links to tools to check XML validity, including a schema checker and a
+validating parser, can be found at [XML-CHECK].
+
+Other guidelines for the use of XML in IETF protocols can be found in BCP 70
+[RFC 3470].
+
+- [ ] Verify that any XML in the I-D is well-formed, and if it is intended to
+      be valid, confirm that it validates against the appropriate definition.
+
+XML provides structures, such as the "<any>" element information item in XML
+Schema, to allow element extensions.
+
+- [ ] Ensure the I-D contains clear guidance on how, when, and where any
+      extension structures, such as versioning, can be used.
+
+- [ ] Check that any new or updated XML Schemas, Namespaces, and Resource
+      Description Framework (RDF) Schemas are being registered with IANA using
+      the procedures described in BCP 81 [RFC 3688].
+
+#### Example Addresses
+
+- [ ] Verify that examples use example FQDNs whenever possible
+
+        Addresses used in examples should use fully qualified domain names
+        instead of literal IP addresses, and should use example FQDNs such as
+        "foo.example.com" instead of real-world FQDNs.  See [RFC 2606] for
+        example domain names that can be used.  Note that the entire
+        “.example” TLD is reserved, allowing for arbitrary subdomains (in
+        particular, ones that are not considered same-origin on the Web).
+
+- [ ] Verify that literal IP addresses are from the example ranges
+
+        There are also ranges of IP addresses set aside for this purpose.  For
+        IPv4, these are defined in [RFC 6890]; for IPv6, see [RFC 3849]. Per
+        the IAB Statement on IPv6 [IAB-IPV6], IPv6 examples should be used.
+
+- [ ] Verify that private addresses that would be used in the real world
+      are not used in examples.
+
+- [ ] Verify that real telephone numbers are not used in examples.
+
+        Use those numbers that were reserved for examples or fictitious use.
+        Available numbers for use in examples are:
+
+          UK: +44-<geographic-area-code>-496-<0000-0999>
+          USA: +1-<area code>-555-<0100-0199> (see
+               https://www.nationalnanpa.com/pdf/NRUF/ATIS-0300115.pdf)
+
 ## Format
 
 ## References
+
+[CLUSTER](https://www.rfc-editor.org/about/clusters/)
 
 [ID-REMOVAL](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/)
 
