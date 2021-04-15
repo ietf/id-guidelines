@@ -71,6 +71,89 @@ progress".
 
 ## Internet-Draft Names
 
+Internet-Draft names appear inside the I-D, and are used as components of
+filenames for the various formats the I-D may appear in. The characters
+that may appear in an I-D name are restricted:
+
+[ ] Ensure that the I-D name consist only of the lower case letters a-z,
+the digits 0-9, and hyphens.
+
+The name of an I-D consists of several components, separated by a hyphen.
+No empty components are allowed. That is, consecutive hyphens may not appear
+in an I-D name. 
+
+The first component identifies the I-D as a draft (as opposed to other 
+docuemnt types, such as charters or reviews).
+
+[ ] Verify that the I-D name begins with 'draft-'
+
+The second component identifies the source of a draft. If an I-D  has
+been adopted into any stream other than the Independent Submission Stream,
+this component will identify the stream.
+
+If the I-D has not been adopted into any stream or is being considered for
+publication in the Independent Submission Stream, the second component should
+consist of a string related to the names(s) of the author(s). There are no
+mechanical rules for this string beyond consisting only of the allowed characters.
+However, objectionable or misleading strings are subject to change or removal.
+The string is typically the last name of the lead author or editor.
+
+The second component must not be easily confused with a group acronym. The
+following strings for the second component are reserved for their respective
+organizations (some of which are historic):
+  * iana
+  * iaoc
+  * iesg
+  * ietf-trust
+  * rfc-editor
+
+The second component should not contain a hyphen. Legacy uses and edge cases
+such as hyphenated last names are allowed. Having a hyphen in the second
+component makes it hard to extract programatically. This forces many tools 
+to use heuristics when tying to locate the second component.
+
+
+[ ] Ensure the second component reasonably identifes the source of the I-D.
+    If the I-D has been adopted by a stream, ensure the second component is
+      * ietf for the IETF stream
+      * iab for the IAB stream
+      * irtf for the IRTF stream
+    Otherwise, ensure that the second component is not a group acronym or
+    a reserved string, is not objectionable, and does not introduce confusion.
+
+Note that any I-D submitted with one of these stream identifiers in the second 
+component that has not been adopted by the indicated stream will either be
+rejected or replaced.
+
+If the I-D is targetted at or has been adopted by a group, the group's acronym
+should be added to the name just after the second component, separated by a
+hyphen.
+
+[ ] Ensure adopted or group targetted I-Ds identify the group just after the
+    second component by including the group's acronym.
+
+Note again that if the I-D has not been adopted into a stream, and identifies
+a stream in the second component, it will be rejected or replaced. In particular
+for IETF stream documents, the first version of a draft with a name that begins 
+with 'draft-ietf-acronym-' for any working group acronym must be approved by 
+the working group's chairs before it will be posted.
+
+The remainder of the name describes the purpose of the I-D, usually in
+just a few words. Each word is separated by a hyphen. 
+
+[ ] Ensure the name reasonably reflects the purpose of the I-D.
+
+Internet-Drafts are versioned with two digits, separated from the name
+with a hyphen. The initial version of an I-D must be '00', and subsequent
+updates must increment the version number by one.
+
+If the I-D is submitted as XML, the name and version of the document will
+be declared in the appropriate "name" and "version" attributes [RFC 7991],
+and the filename submitted must be of the form "name-version.xml".
+
+If the I-D is submitted as plain text, the name and version will appear
+on the documents first page, and the filename submitted must be of the form
+"name-version.txt".
 
 
 ## The Submission Process
