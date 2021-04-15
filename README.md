@@ -295,6 +295,11 @@ text most appropriate for the Internet-Draft.
 IETF stream documents authors must not select boilerplate that prohibits
 publication as an RFC.
 
+A standard Copyright Notice and Disclaimer must be included. This will be
+generated automatically for authors preparing XML submissions. Authors of
+plain-text submissions should refer to the [TLP] section 6 for exact text
+to reproduce.
+
 - [ ] Verify that one of the approved IPR boilerplate selections are
       indicated in XML submissions or exactly reproduced in plain-text
       submissions.
@@ -354,10 +359,120 @@ under certain circumstances.  In particular, when preparing a document intended
 to be included in the IETF Stream, before submitting the I-D, discussing it
 with the working group chairs or Area Directors is advised.
 
-Finally, a standard Copyright Notice and Disclaimer must be included, as is
-present in the current Legend Instructions.  For further details, see [RFC
-5378], Section 6.
+#### Abstract
 
+Every Internet-Draft must have an Abstract section. The Abstract should provide
+a concise and comprehensive overview of the purpose and contents of the entire
+document. Its purpose is to give a technically knowledgeable reader a general
+overview of the function of the document, to decide whether reading it will be
+useful. In addition to its function in the document, the Abstract section is
+used as a summary in publication announcements and in the online index of I-Ds
+[INDEX].
+
+Composing a useful Abstract is a non-trivial writing task. Often, a
+satisfactory abstract can be constructed in part from material from the
+Introduction section, but a good abstract will be shorter, less detailed, and
+broader in scope than the Introduction. Simply copying and pasting the first
+few paragraphs of the Introduction is tempting, but it generally results in an
+Abstract that is both incomplete and redundant.  An Abstract will typically be five to ten lines.  An Abstract of more than 20 lines or fewer than three lines is generally not acceptable.
+
+
+- [] Ensure the document contains an appropriate Abstract.
+
+An Abstract should be complete in itself, so it should not contain no citations
+unless they are completely defined within the Abstract. Abbreviations appearing
+in the Abstract should generally be expanded in parentheses. There is a set of
+reasonable exceptions to this rule; for example, readers don't need to be
+reminded of what "IP" or "TCP" or "MIB" means. The RFC Editor maintains a list
+of approved abbreviations that do not need to be expanded [ABBREV]. In the end,
+this is a judgment call, but please err on the side of explicitness.
+
+- [ ] Verify that the Abstract stands alone.
+- [ ] Ensure abbreviations in the Acronym are expanded as appropriate.
+- [ ] If the I-D intends to obsolete or update a previous RFC, ensure the
+      Abstract says so explicitly.
+
+[RFC 7322] includes further guidance about writing an Abstract section.
+
+#### Introduction
+
+- [ ] If the I-D intends to obsolete or update a previous RFC, ensure the
+      Introduction briefly explains what is being updated and why.
+
+#### Security Considerations
+
+[RFC 3552] provides current best guidance about writing a Security
+Considerations section.  This section is mandatory in all documents.
+
+The text of this section must have a meaningful exploration of security issues
+raised by the proposal, which should include both risks and da description of
+solutions or workarounds.  It is rare that technical work can legitimately make
+a claim like "This protocol introduces no security considerations," so it needs
+to be fairly obvious for that to be believable, or the document will be
+returned for further development.  Procedural documents, however, more commonly
+can claim no added security risk.
+
+Some other references that may be useful when crafting this section are:
+
+  * Security glossary v2 [RFC 4949]
+  * Use of IPsec v2 [RFC 5406]
+  * Guidelines for Authors and Reviewers of MIB documents [RFC 4181]
+  * YANG Security Considerations [YANG-SEC]
+
+- [ ] Verify that a meaningful Security Consideration section is present
+
+#### IANA Considerations
+
+This section must be present to enumerate any actions IANA must take upon
+publication of the document as an RFC.
+
+- [ ] Verify this section contains clear instructions if IANA is expected
+      to create a new registry or modify rules for an existing registry.
+
+- [ ] Verify this section contains clear instructions if the document
+      requires IANA to assign or update values in an IANA registry before
+      RFC publication.
+
+- [ ] Check the existing IANA registry for registration policy rules
+      and any requirements for specific requests for registration of
+      protocol parameters.  Individual RFCs have specific criteria and
+      instructions that should be followed.
+
+- [ ] If the registration policy is "Expert Review" or "Specification
+      Required" and/or requires mailing list review, as soon as the
+      requested parameter information is properly formed, consider
+      initiating reviews with IANA or sending to the appropriate mailing
+      list (where applicable; see the RFC for that the registry for
+      instructions).  If there are any questions about what type of approval
+      is needed from the Designated Expert (for example, if the registration
+      should be made immediately or only pre-reviewed before publication),
+      please contact IANA.
+
+- [ ] If registrations are needed early for registries with "Specification
+      Required", "RFC Required", "IETF Review", or "Standards Action" policies,
+      consider using the early allocation process defined in [RFC 7120].
+
+- [ ] Verify this section explicitly and clearly identifies any references
+      to this document that should be added for any registrations and any
+      that should replace existing references.
+
+- [ ] If there is no action for IANA, verify that this section explicitly says
+      “This document has no IANA actions.” It is often helpful for the IANA
+      Considerations section to remain in place upon publication as an RFC
+      even if there are no actions.
+
+- [ ] If the document has considerable instructions for IANA actions, request
+      an early review of the document by IANA.
+
+For more specific guidelines regarding structure and content for writing IANA
+Considerations sections, please see [RFC 8126] and [IANA].
+
+#### References
+
+#### Authors' Addresses
+
+- [ ] Verify that the I-D contains a section giving the name and contact
+      information (postal mail, phone, and/or email) for the authors.
 
 ### Content Considerations
 
