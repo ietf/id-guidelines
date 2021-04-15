@@ -80,9 +80,9 @@ the digits 0-9, and hyphens.
 
 The name of an I-D consists of several components, separated by a hyphen.
 No empty components are allowed. That is, consecutive hyphens may not appear
-in an I-D name. 
+in an I-D name.
 
-The first component identifies the I-D as a draft (as opposed to other 
+The first component identifies the I-D as a draft (as opposed to other
 docuemnt types, such as charters or reviews).
 
 [ ] Verify that the I-D name begins with 'draft-'
@@ -109,7 +109,7 @@ organizations (some of which are historic):
 
 The second component should not contain a hyphen. Legacy uses and edge cases
 such as hyphenated last names are allowed. Having a hyphen in the second
-component makes it hard to extract programatically. This forces many tools 
+component makes it hard to extract programatically. This forces many tools
 to use heuristics when tying to locate the second component.
 
 
@@ -121,7 +121,7 @@ to use heuristics when tying to locate the second component.
     Otherwise, ensure that the second component is not a group acronym or
     a reserved string, is not objectionable, and does not introduce confusion.
 
-Note that any I-D submitted with one of these stream identifiers in the second 
+Note that any I-D submitted with one of these stream identifiers in the second
 component that has not been adopted by the indicated stream will either be
 rejected or replaced.
 
@@ -134,12 +134,12 @@ hyphen.
 
 Note again that if the I-D has not been adopted into a stream, and identifies
 a stream in the second component, it will be rejected or replaced. In particular
-for IETF stream documents, the first version of a draft with a name that begins 
-with 'draft-ietf-acronym-' for any working group acronym must be approved by 
+for IETF stream documents, the first version of a draft with a name that begins
+with 'draft-ietf-acronym-' for any working group acronym must be approved by
 the working group's chairs before it will be posted.
 
 The remainder of the name describes the purpose of the I-D, usually in
-just a few words. Each word is separated by a hyphen. 
+just a few words. Each word is separated by a hyphen.
 
 [ ] Ensure the name reasonably reflects the purpose of the I-D.
 
@@ -192,7 +192,7 @@ manual-post request by sending the I-D via email to support@ietf.org.  The
 message may contain the I-D as an attachment, or a URL that will resolve to the
 I-D. The I-D must be a stand-alone document in either XML or plain-text format.
 Multiple files presented in containers such as zip or tar will not be accepted.
-All other formats will be discarded without opening. 
+All other formats will be discarded without opening.
 
 ## Content Considerations
 
