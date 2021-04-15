@@ -5,9 +5,10 @@
   * [Background](#background)
   * [Internet-Draft Names](#internet-draft-names)
   * [The Submission Process](#the-submission-process)
-  * [Content Considerations](#content-considerations)
+  * [Content](#content)
     * [Required Content](#required-content)
-  * [Format Considerations](#format-considerations)
+    * [Content Considerations](#content-considerations)
+  * [Format](#format)
   * [References](#references)
   * [Acknowledgments](#acknowledgments)
 
@@ -110,11 +111,10 @@ organizations (some of which are historic):
 
 The second component should not contain a hyphen. Legacy uses and edge cases
 such as hyphenated last names are allowed. Having a hyphen in the second
-component makes it hard to extract programatically. This forces many tools
+component makes it hard to extract programmatically. This forces many tools
 to use heuristics when tying to locate the second component.
 
-
-- [ ] Ensure the second component reasonably identifees the source of the I-D.
+- [ ] Ensure the second component reasonably identifies the source of the I-D.
 
       If the I-D has been adopted by a stream, ensure the second component is
         * ietf for the IETF stream
@@ -131,7 +131,7 @@ If the I-D is targeted at or has been adopted by a group, the group's acronym
 should be added to the name just after the second component, separated by a
 hyphen.
 
-- [ ] Ensure adopted or group targetted I-Ds identify the group just after the
+- [ ] Ensure adopted or group targeted I-Ds identify the group just after the
       second component by including the group's acronym.
 
 Note again that if the I-D has not been adopted into a stream, and identifies a
@@ -157,14 +157,24 @@ If the I-D is submitted as plain text, the name and version will appear on the
 documents first page, and the filename submitted must be of the form
 "name-version.txt".
 
+Convention dictates that an individual submission seeking adoption by a
+working group will include the working group's acronym just after the
+second component. For example, a person or group identified as "foo"
+seeking to get a document about "specific-subject" adopted by the "bar"
+working group might chose the name "draft-foo-bar-specific-subject", and
+submit the file "draft-foo-bar-specific-subject-00.xml". If the document is
+later adopted by the working group, the authors will usually create a new
+I-D named "draft-ietf-bar-specific-subject" and submit it as
+"draft-ietf-bar-specific-subject-00.xml". Note that the version number of
+this new I-D will always be "00".
 
 ## The Submission Process
 
 Internet-Draft submissions are made using the IETF Datatracker's [DATATRACKER]
 submission tool [IDST]. The submission should be provided as XML source.
-XML2RFC Version 3 XML source [RFC 7991] is preferred, but Version 2 source 
-[RFC 7749] will be accepted. If XML source is not available, a plain-text 
-submission will be accepted.  
+XML2RFC Version 3 XML source [RFC 7991] is preferred, but Version 2 source
+[RFC 7749] will be accepted. If XML source is not available, a plain-text
+submission will be accepted.
 
 Currently, the submission tool will accept both an XML and plain-text
 submission, as well as PDF and PostScript versions of the document. In such
@@ -196,11 +206,162 @@ I-D. The I-D must be a stand-alone document in either XML or plain-text format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
 
-## Content Considerations
+Be aware of the deadlines for submitting I-Ds before each IETF Meeting. The
+important dates page [IMPORTANTDATES] will show the deadline for submitting
+I-Ds. Some meetings may have an earlier deadline for initial versions of I-Ds
+than for updates to existing I-Ds. After the deadlines, submissions will not
+be accepted until the meeting begins. The leadership responsible for each
+stream can override this submission blackout period when appropriate. Care
+should be taken when submitting an I-D near the deadline, especially if
+a manual post is requested. The steps to confirm and post the submission
+take time.
+
+When a submission is made through the submission tool, the authors will
+receive email with a request to verify the submission. The submission will
+not be accepted and posted until the action requested in that email is
+performed. If the submitter is logged into the Datatracker and listed as
+an author this step is bypassed.
+
+If the I-D being submitted replaces another I-D (such as in the earlier
+example discussing creating a new I-D when a working group adopts a
+document), the submitter will be able to identify the replacement using
+the submission tool. A group chair or the IETF Secretariat will verify
+the replacement before the relationship is added to the Datatracker.
+
+## Content
+
+Internet-Drafts and RFCs have certain required content. I-Ds should take the
+accrued knowledge on frequent and particularly important topics into
+consideration as early in their life-cycle as possible.
+
 
 ### Required Content
 
-## Format Considerations
+If an Internet-Draft is prepared in XML, the tooling will ensure that
+required content is present, automatically provide selected boilerplate
+text, and handle the majority of formatting concerns. An Internet-Draft
+prepared as plain text requires more effort to ensure that the required
+content is present and in the right form.
+
+As Internet-Drafts are inputs into what might eventually be published as
+RFCs, their content requirements are based on what is required in an RFC.
+Specifically, many of the documents defining these requirements are written
+in terms of RFCs and do not mention Internet-Drafts, but these requirements,
+with very few exceptions, apply to Internet-Drafts.
+
+- [ ] Ensure that the I-D correctly provides the following:
+
+      * The date the document was generated
+      * A list of authors/editors and their affiliations
+      * The group that originated the draft (if any)
+      * The intended status of the document
+      * The set of RFCs this I-D intends to update or replace, if any
+
+See [RFC 7841] for specific details.
+
+These required elements are represented explicitly in XML source. The tools
+will automatically format the information when building a presentation format.
+The format required for these items in plain-text submissions is discussed
+in the Format section below.
+
+- [ ] Ensure that the I-D contains each of the following sections:
+
+      * IPR-Related Notices
+      * Abstract
+      * Introduction
+      * Security Considerations
+      * IANA Considerations
+      * References
+      * Authors' Addresses
+
+#### IPR-Related Notices
+
+[BCP 78] and [BCP 79] specify the IETF's Intellectual Property policies.
+Among them is a requirement to include certain standardized text in each
+Internet-Draft. This text is managed by the IAB. The current acceptable
+boilerplate forms are described at [HEADERS-AND-BOILERPLATE] and fully expanded
+forms of the boilerplate texts are maintained at [RFCEDITOR-MEMOSTATUS].
+
+Authors preparing XML submissions indicate which boilerplate text to use by
+providing one of a set of enumerated values to the ipr attribute of the rfc
+element in the XML source. The tooling generates the actual required text. See
+[RFC 7991] Appendix A1 for the available ipr attribute values. The majority
+of IETF stream documents I-Ds indicate "trust200902" or "pre5378Trust200902"
+as needed.
+
+Authors preparing plain-text submissions must carefully reproduce the
+text most appropriate for the Internet-Draft.
+
+IETF stream documents authors must not select boilerplate that prohibits
+publication as an RFC.
+
+- [ ] Verify that one of the approved IPR boilerplate selections are
+      indicated in XML submissions or exactly reproduced in plain-text
+      submissions.
+
+- [ ] Verify that the most appropriate IPR boilerplate for the I-D is
+      indicated.
+
+Any Internet-Draft submitted that does not select on of the required IPR
+boilerplate statements will be rejected. The IETF Secretariat cannot add
+a selection for the author.
+
+If the submitter of a non-IETF stream I-D desires to eliminate the IETF's
+right to make modifications and derivative works of the I-D, one of two
+notices must be included after the IPR statement.
+
+The first choice is used if the contributor intends for the I-D to be
+published as an RFC:
+
+      This document may not be modified, and derivative works of it may
+      not be created, except to format it for publication as an RFC or
+      to translate it into languages other than English.
+
+This will be automatically generated by the tools from XML source if the
+ipr attribute value "noModificationTrust200902" is selected.
+
+The second choice is used when the contributor does not intend for the I-D
+to be published as an RFC:
+
+      This document may not be modified, and derivative works of it may
+      not be created, and it may not be published except as an
+      Internet-Draft.
+
+This will be automatically generated by the tools from XML source if the
+ipr attribute value "noDerivativesTrust200902" is selected.
+
+These notices may not be used with any IETF standards-track document or with
+most working group documents, except as discussed in [BCP 78], since the IETF
+must retain change control over its documents and the ability to augment,
+clarify, and enhance the original contribution in accordance with the IETF
+Standards Process.
+
+The first choice may be appropriate when republishing standards produced by a
+standards body other than the IETF, industry consortia, or companies. These are
+typically published as Informational RFCs and do not require that change
+control be ceded to the IETF. Documents of this type convey information for the
+Internet community.
+
+The second choice may be used on I-Ds that are intended to provide background
+information to educate and to facilitate discussions within IETF working groups
+but are not intended to be published as RFCs.
+
+If you think that you, your company, or anyone else owns a patent or other
+Intellectual Property Rights (IPR) on the work described in the I-D, you should
+carefully read [BCP 79].  The first notice required in an I-D, described
+earlier in this section, obligates you to send an IPR disclosure statement
+under certain circumstances.  In particular, when preparing a document intended
+to be included in the IETF Stream, before submitting the I-D, discussing it
+with the working group chairs or Area Directors is advised.
+
+Finally, a standard Copyright Notice and Disclaimer must be included, as is
+present in the current Legend Instructions.  For further details, see [RFC
+5378], Section 6.
+
+
+### Content Considerations
+
+## Format
 
 ## References
 
@@ -208,5 +369,5 @@ All other formats will be discarded without opening.
 
 ## Acknowledgments
 
-This document is based heavily on the work of Russ Housley, Ben Kaduk, 
+This document is based heavily on the work of Russ Housley, Ben Kaduk,
 Murray Kucherawy, Alvaro Retana, and the members of many IESGs.
