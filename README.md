@@ -637,6 +637,58 @@ Schema, to allow element extensions.
           USA: +1-<area code>-555-<0100-0199> (see
                https://www.nationalnanpa.com/pdf/NRUF/ATIS-0300115.pdf)
 
+#### Stale Text
+
+Avoid text that will become outdated after the I-D is published.  Examples
+include non-permanent URLs, mentions of specific mailing lists as places to
+send comments on a document, or referring to specific WGs as a place to perform
+specific future actions (e.g., reviewing follow-up documents). In some cases
+(like the ORGANIZATION clause in MIB modules), references to working groups are
+impossible to avoid; however, generally, Internet-Drafts should
+not assign powers or responsibilities to WGs unless the WG in question is
+certain to exist as long as the practice documented in the published RFC
+remains valid. In cases where a specific WG is expected to be a focal point for
+future action, it is acceptable to give the task to the IESG, giving
+instructions on how the action is expected to be delegated, e.g., by forwarding
+to an appropriate WG or another set of experts.
+
+- [ ] Check the I-D for text that could become stale. To the extent
+      possible, make it future-proof.
+
+#### Protocol Issues
+
+This section provides some general guidance that will help to avoid extended
+discussion during the document review and approval process.  The IESG has
+compiled a list of useful topics to consider [TOPICS].
+
+- [ ] Ensure the I-D avoids IPv4 specificity. Both IPv4 and IPv6 must be
+      supportable, unless the protocol is naturally IPv4 specific or IPv6
+      specific.  Expect an IPv4-only protocol to be met with friction.
+
+- [ ] Ensure the I-D does not introduce congestion issues. No application can
+      be permitted to cause catastrophic congestion.  See [RFC 2914] for
+      details. Applications using TCP or SCTP will normally fulfill this
+      requirement automatically. Applications using UDP should adhere to the
+      guidance in [RFC 8085].
+
+- [ ] Verify that any sort of end-to-end checksum or integrity check being used
+      (especially, but not limited to, cryptographic checksums or MACs)
+      precisely specifies the contents of the fields to be checksummed, and in
+      exactly what order the operations are done. Pay special attention to any
+      area reserved for the checksum itself.
+
+- [ ] Verify that all user-visible text fields are internationalizable.  See
+      [RFC 2277]. For most cases, this means UTF-8 [RFC 3629].  But note that
+      it is often not sufficient to simply say that strings are encoded with
+      UTF-8 (see below about comparisons), especially when talking about
+      case-(in)sensitivity, case folding, and the like.
+
+- [ ] If text fields are included in some calculations, like matching,
+      sorting, etc., verif that how those operations are applied to the
+      Unicode/ISO 10646 character set must be described in detail. See
+      "stringprep" [RFC 8264] for more information on the recommended way
+      of handling comparisons.
+
 ## Format
 
 ## References
