@@ -266,7 +266,7 @@ in the Format section below.
 
 - [ ] Ensure that the I-D contains each of the following sections:
 
-      * IPR-Related Notices
+      * IPR-Related Notices 
       * Abstract
       * Introduction
       * Security Considerations
@@ -537,6 +537,23 @@ published as RFCs simultaneously.
 
 ### Content Considerations
 
+#### Internet-Drafts are not RFCs
+
+- [ ] Verify that the I-D does not refer to itself as an RFC or a draft RFC.
+
+- [ ] Verify that the I-D does neither states nor implies that it has any
+      standards status.
+
+        To do so conflicts with the roles of the RFC Editor and the IESG. The
+        title of the document should not imply a status. Avoid the use of the
+        terms Standard, Proposed, Draft, Experimental, Historic, Required, 
+        Recommended, Elective, or Restricted in the I-D title. An I-D may
+        indicate its intended status, if it were to be published as an RFC,
+        by setting the status attribute of the seriesInfo element (see [RFC
+        7991]) or by placing the words "Intended status: <status>" on the
+        left side of the headers in the first page if preparing a plain-text
+        submission.
+
 #### Normative Language
 
 If [BCP 14] language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119,
@@ -690,6 +707,75 @@ compiled a list of useful topics to consider [TOPICS].
       of handling comparisons.
 
 ## Format
+
+Formatting is automatically taken care of when Internet-Drafts are submitted in
+XML form. Authors of such drafts have very few formatting issues to consider.
+The primary consideration is ensuring the tools are able to render the various
+formats. In particular, the content of the XML must be amenable to rendering
+with the 72 characther per line restriction in the text format.
+
+Authors preparing Internet-Drafts in plain text must ensure the document
+conforms to many formatting rules. 
+
+The format constraints for a plain-text I-D are primarily the same as those for
+the text format of an RFC as specified in [RFC 7994]. One notable difference is
+that Internet-Drafts are paginated, and include running headers and footers.
+A few formatting requirements are highlighted here, but authors preparing
+plain-text documents should fully undertand the requirements in [RFC 7994],
+[RFC 7841], [RFC 7332] and [RFCSTYLE].
+
+The submission tool will block submission for many formatting errors, and flag
+many others. The [IDNITS] tool can be used to identify those so they can be
+corrected before submission. Well-formatted I-Ds tend to progress through the
+review process more quickly. When an I-D is approved for publication as an RFC,
+the RFC Editor can take care of a few small formatting errors. However, if many
+formatting errors exist the document will be returned to the stream requesting
+publication for fixes. Please be aware that not conforming to the formatting
+rules will most probably delay publication and consume time that can be spent
+on other work.
+
+These are formatting requirements for plain-text I-Ds that often are
+overlooked:
+
+- [ ] Verify that the document name and version appears on the first page
+
+- [ ] Verify that the I-D contains a Table of Contents section between
+      the Copyright Notice and the Introduction. This section must not
+      be numbered.
+
+- [ ] Verify that no text extends beyond the 72nd column of a line. This
+      limit is especially imporant for diagrams and code, which the RFC
+      Editor may not be able to trivially reformat to fall within the 
+      margins. 
+
+- [ ] Verify that source code does not extend beyond the 69th column.
+
+- [ ] Verify that the text is ragged-right.
+
+- [ ] Verify that hyphenation is not used for line breaks. However
+      hyphenated words (e.g. "Internet-Draft") may be split at the
+      hyphen across successive lines.
+
+- [ ] Verify that the I-D contains no footnotes.
+
+- [ ] Verify the characters in the I-D meet the requirements of [RFC 7994].
+      In brief, the document must be UTF-8 encoded, but code points not
+      corresponding to ASCII are allowed only in certain contexts (see [RFC
+      7997]. Control characters other than CR, NL, and FF are not allowed.
+      The use of non-ASCII characters is limited to when there is a specific
+      need, most notably for names. Many uses of non-ASCII characters will
+      require listing the Unicode codepoint by number in addition to the
+      character itself.
+
+- [ ] Verify that the "Status of This Memo" and "Abstract" sections are not
+      numbered.
+
+- [ ] Verify that the appropriate boilerplate text in the IPR related sections
+      is reproduced exactly (see the IPR-Related Notices section). In 
+      particular, ensure that the names of RFCs contained in that content are 
+      not reformatted as references.
+
+- [ ] Verify that the I-D is well formated for readability and clarity.
 
 ## References
 
