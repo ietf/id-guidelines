@@ -616,9 +616,6 @@ W3C definition of validity), the samples must reference and be validated using
 an appropriate XML Schema, DTD, or another standard validation mechanism that
 is structurally and syntactically correct.
 
-Links to tools to check XML validity, including a schema checker and a
-validating parser, can be found at [XML-CHECK].
-
 Other guidelines for the use of XML in IETF protocols can be found in BCP 70
 [RFC 3470].
 
@@ -848,7 +845,6 @@ overlooked:
 [TOPICS](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics)
 [XML2RFC](https://pypi.org/project/xml2rfc/)
 [XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
-[XML-CHECK]
 [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
 -----
 
