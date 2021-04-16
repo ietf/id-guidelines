@@ -42,6 +42,16 @@ inspected, or checked, to see whether changes should be made before submitting
 an I-D. These items are marked with checkboxes ([ ]). However, authors are
 expected to be familiar with and to apply the full guidance in this document.
 
+There are tools to help with the creation of Internet-Drafts. Rather than
+attempting to construct a plain-text Internet-Draft manually, it is highly
+recommended to use a structured language for authoring, and a toolchain like
+[XML2RFC] or [KRAMDOWN-RFC] to build a submission.  There is an online converter
+for documents in the xml2rfc or kramdown-2629 input formats available at
+[XML2RFC-ONLINE].
+
+As Internet-Drafts may be eventually published as RFCs, it is recommended to
+consult the RFC Editor's publication process [RFCPUB].
+
 ## Background
 
 All versions of Internet-Drafts are kept in the Internet-Draft Archive
@@ -779,9 +789,68 @@ overlooked:
 
 ## References
 
-[CLUSTER](https://www.rfc-editor.org/about/clusters/)
 
+
+
+-----
+[ABBREV](https://www.rfc-editor.org/materials/abbrev.expansion.txt)
+[ABNF-CHECK](https://tools.ietf.org/tools/bap/)
+[ARCHIVE](https://www.ietf.org/archive/id)
+[BCP 14](https://www.rfc-editor.org/info/bcp14)
+[BCP 78](https://www.rfc-editor.org/info/bcp78)
+[BCP 79](https://www.rfc-editor.org/info/bcp79)
+[CLUSTER](https://www.rfc-editor.org/about/clusters/)
+[DATATRACKER](https://datatracker.ietf.org)
+[HEADERS-AND-BOILERPLATE](https://www.iab.org/documents/headers-boilerplate/)
+[IAB-IPV6](https://www.iab.org/2016/11/07/iab-statement-on-ipv6)
+[IANA](https://www.iana.org/help/protocol-registration)
 [ID-REMOVAL](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/)
+[IDNITS](https://tools.ietf.org/tools/idnits/)
+[IDST](https://datatracker.ietf.org/submit)
+[IESG-FORMAL](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/)
+[IMPORTANTDATES](https://datatracker.ietf.org/meeting/important-dates)
+[INDEX](https://www.ietf.org/id/1id-abstracts.txt)
+[KRAMDOWN-RFC](https://github.com/cabo/kramdown-rfc2629)
+[LIBSMI](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/)
+[REFERENCE](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/)
+[REPOSITORY](https://www.ietf.org/id)
+[RFC 2026](https://rfc-editor.org/info/rfc2026)
+[RFC 2119](https://rfc-editor.org/info/rfc2119)
+[RFC 2277](https://rfc-editor.org/info/rfc2277)
+[RFC 2606](https://rfc-editor.org/info/rfc2606)
+[RFC 2914](https://rfc-editor.org/info/rfc2914)
+[RFC 3470](https://rfc-editor.org/info/rfc3470)
+[RFC 3552](https://rfc-editor.org/info/rfc3552)
+[RFC 3629](https://rfc-editor.org/info/rfc3629)
+[RFC 3688](https://rfc-editor.org/info/rfc3688)
+[RFC 3849](https://rfc-editor.org/info/rfc3849)
+[RFC 4181](https://rfc-editor.org/info/rfc4181)
+[RFC 4949](https://rfc-editor.org/info/rfc4949)
+[RFC 5234](https://rfc-editor.org/info/rfc5234)
+[RFC 5406](https://rfc-editor.org/info/rfc5406)
+[RFC 6890](https://rfc-editor.org/info/rfc6890)
+[RFC 7120](https://rfc-editor.org/info/rfc7120)
+[RFC 7322](https://rfc-editor.org/info/rfc7322)
+[RFC 7332](https://rfc-editor.org/info/rfc7332)
+[RFC 7749](https://rfc-editor.org/info/rfc7749)
+[RFC 7841](https://rfc-editor.org/info/rfc7841)
+[RFC 7991](https://rfc-editor.org/info/rfc7991)
+[RFC 7994](https://rfc-editor.org/info/rfc7994)
+[RFC 8085](https://rfc-editor.org/info/rfc8085)
+[RFC 8126](https://rfc-editor.org/info/rfc8126)
+[RFC 8174](https://rfc-editor.org/info/rfc8174)
+[RFC 8264](https://rfc-editor.org/info/rfc8264)
+[RFC 8279](https://rfc-editor.org/info/rfc8279)
+[RFCEDITOR-MEMOSTATUS](https://www.rfc-editor.org/materials/status-memos.txt)
+[RFCPUB](https://www.rfc-editor.org/pubprocess/)
+[RFCSTYLE](https://www.rfc-editor.org/styleguide.html)
+[TLP](https://trustee.ietf.org/documents/trust-legal-provisions/)
+[TOPICS](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics)
+[XML2RFC](https://pypi.org/project/xml2rfc/)
+[XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
+[XML-CHECK]
+[YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
+-----
 
 ## Acknowledgments
 
