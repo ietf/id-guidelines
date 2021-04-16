@@ -754,7 +754,7 @@ the text format of an RFC as specified in [RFC 7994]. One notable difference is
 that Internet-Drafts are paginated, and include running headers and footers.
 A few formatting requirements are highlighted here, but authors preparing
 plain-text documents should fully understand the requirements in [RFC 7994],
-[RFC 7841], [RFC 7332], [RFC 7322], and [RFCSTYLE].
+[RFC 7841], [RFC 7332], [RFC 7322], [RFCSTYLE], and [HEADERS-AND-BOILERPLATE].
 
 The submission tool will block submission for many formatting errors, and flag
 many others. The [IDNITS] tool can be used to identify those so they can be
