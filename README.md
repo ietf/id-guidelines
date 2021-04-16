@@ -47,7 +47,10 @@ attempting to construct a plain-text Internet-Draft manually, it is highly
 recommended to use a structured language for authoring, and a toolchain like
 [XML2RFC] or [KRAMDOWN-RFC] to build a submission. There is an online converter
 for documents in the xml2rfc or kramdown-2629 input formats available at
-[XML2RFC-ONLINE].
+[XML2RFC-ONLINE]. Authors working with the XML2RFC XML source format should
+be familiar with the grammar [RFC 7991], what the xml2rfc tool currently
+accepts [XML2RFC-DOC], and the RFC Editor's FAQ on using the v3 format
+[RFCEDITOR-V3FAQ].
 
 As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the RFC Editor's publication process [RFCPUB].
@@ -415,7 +418,7 @@ this is a judgment call, but please err on the side of explicitness.
 - [ ] If the I-D intends to obsolete or update a previous RFC, ensure the
       Abstract says so explicitly.
 
-[RFC 7322] includes further guidance about writing an Abstract section.
+[RFCSTYLE] includes further guidance about writing an Abstract section.
 
 #### Introduction
 
@@ -440,6 +443,7 @@ Some other references that may be useful when crafting this section are:
   * Security glossary v2 [RFC 4949]
   * Use of IPsec v2 [RFC 5406]
   * Guidelines for Authors and Reviewers of MIB documents [RFC 4181]
+  * Security Guidelines for IETF MIB Modules [MIB-SEC]
   * YANG Security Considerations [YANG-SEC]
 
 - [ ] Verify that a meaningful Security Consideration section is present
@@ -507,7 +511,7 @@ the changes
 #### References
 
 A References section must be present and split into normative and informative
-sections. For guidance, see [RFC 7322] and [REFERENCE].
+sections. For guidance, see [RFCSTYLE] and [REFERENCE].
 
 Normative and informative references to non-IETF documents are permitted.
 However, it is best to minimize such normative references, because assessing
@@ -524,7 +528,7 @@ must be to open external standards, per [RFC 2026].
 
        A bare URI is not generally considered a stable reference. For web-only
        documents, adding a reference number, title , and/or an author will help
-       make the reference more stable. See [RFC 7322] for specific guidance
+       make the reference more stable. See [RFCSTYLE] for specific guidance
        about URIs in Internet-Drafts. Judgment can be used here; the stability
        of normative references is even more important than the stability of
        informative references.
@@ -545,6 +549,27 @@ published as RFCs simultaneously.
 - [ ] Verify that the I-D contains a section giving the name and contact
       information (postal mail, phone, and/or email) for the authors.
 
+          Note that if the I-D is eventually published as an RFC, this
+          information will not be changable. When possible provide
+          contact information that is expected to be stable over time.
+
+- [ ] Verify that there are no more than five authors or editors. If there
+      is a need to list more, discuss the need with the relevant stream
+      leadership as early in the process as possible. For the IETF stream,
+      consult an Area Director.
+
+        Per [RFC 7322]:
+          The total number of authors or editors on the first page is generally
+          limited to five individuals and their affiliations.  If there is a
+          request for more than five authors, the stream-approving body needs
+          to consider if one or two editors should have primary responsibility
+          for this document, with the other individuals listed in the
+          Contributors or Acknowledgements section.  There must be a direct
+          correlation of authors and editors in the document header and the
+          Authors' Addresses section.  These are the individuals that must sign
+          off on the document during the AUTH48 process and respond to
+          inquiries, such as errata.
+
 ### Content Considerations
 
 #### Internet-Drafts are not RFCs
@@ -564,7 +589,7 @@ published as RFCs simultaneously.
         left side of the headers in the first page if preparing a plain-text
         submission.
 
-#### Normative Language
+#### Use of BCP 14 Terms
 
 If [BCP 14] language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119,
 especially those in Sections 6 and 7, should be followed. "SHOULD" is
@@ -729,7 +754,7 @@ the text format of an RFC as specified in [RFC 7994]. One notable difference is
 that Internet-Drafts are paginated, and include running headers and footers.
 A few formatting requirements are highlighted here, but authors preparing
 plain-text documents should fully understand the requirements in [RFC 7994],
-[RFC 7841], [RFC 7332] and [RFCSTYLE].
+[RFC 7841], [RFC 7332], [RFC 7322], and [RFCSTYLE].
 
 The submission tool will block submission for many formatting errors, and flag
 many others. The [IDNITS] tool can be used to identify those so they can be
@@ -809,6 +834,7 @@ overlooked:
 [INDEX](https://www.ietf.org/id/1id-abstracts.txt)
 [KRAMDOWN-RFC](https://github.com/cabo/kramdown-rfc2629)
 [LIBSMI](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/)
+[MIB-SEC](https://trac.ietf.org/trac/ops/wiki/mib-security)
 [REFERENCE](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/)
 [REPOSITORY](https://www.ietf.org/id)
 [RFC 2026](https://rfc-editor.org/info/rfc2026)
@@ -839,11 +865,13 @@ overlooked:
 [RFC 8264](https://rfc-editor.org/info/rfc8264)
 [RFC 8279](https://rfc-editor.org/info/rfc8279)
 [RFCEDITOR-MEMOSTATUS](https://www.rfc-editor.org/materials/status-memos.txt)
+[RFCEDITOR-V3FAQ](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html)
 [RFCPUB](https://www.rfc-editor.org/pubprocess/)
-[RFCSTYLE](https://www.rfc-editor.org/styleguide.html)
+[RFCSTYLE](https://www.rfc-editor.org/styleguide/)
 [TLP](https://trustee.ietf.org/documents/trust-legal-provisions/)
 [TOPICS](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics)
 [XML2RFC](https://pypi.org/project/xml2rfc/)
+[XML2RFC-DOC](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html)
 [XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
 [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
 -----
