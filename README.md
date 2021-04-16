@@ -45,7 +45,7 @@ expected to be familiar with and to apply the full guidance in this document.
 There are tools to help with the creation of Internet-Drafts. Rather than
 attempting to construct a plain-text Internet-Draft manually, it is highly
 recommended to use a structured language for authoring, and a toolchain like
-[XML2RFC] or [KRAMDOWN-RFC] to build a submission.  There is an online converter
+[XML2RFC] or [KRAMDOWN-RFC] to build a submission. There is an online converter
 for documents in the xml2rfc or kramdown-2629 input formats available at
 [XML2RFC-ONLINE].
 
@@ -66,7 +66,7 @@ following occur:
   * the I-D is published as an RFC
   * the I-D expires.
 
-An I-D expires 185 days after the draft was placed in the repository unless it
+An I-D expires 185 days after the I-D was placed in the repository unless it
 is in a state that prevents it from expiring. Examples of such states include
 being processed by the IESG for publication in the IETF stream, or being under
 review by the Independent Series Editor (ISE) for publication in the
@@ -98,7 +98,7 @@ document types, such as charters or reviews).
 
 - [ ] Verify that the I-D name begins with "draft-"
 
-The second component identifies the source of a draft. If an I-D  has
+The second component identifies the source of an I-D. If an I-D has
 been adopted into any stream other than the Independent Submission Stream,
 this component will identify the stream.
 
@@ -106,8 +106,8 @@ If the I-D has not been adopted into any stream or is being considered for
 publication in the Independent Submission Stream, the second component should
 consist of a string related to the names(s) of the author(s). There are no
 mechanical rules for this string beyond consisting only of the allowed
-characters.  However, objectionable or misleading strings are subject to change
-or removal.  The string is typically the last name of the lead author or
+characters. However, objectionable or misleading strings are subject to change
+or removal. The string is typically the last name of the lead author or
 editor.
 
 The second component must not be easily confused with a group acronym. The
@@ -146,7 +146,7 @@ hyphen.
 
 Note again that if the I-D has not been adopted into a stream, and identifies a
 stream in the second component, it will be rejected or replaced. In particular
-for IETF stream documents, the first version of a draft with a name that begins
+for IETF stream documents, the first version of an I-D with a name that begins
 with 'draft-ietf-acronym-' for any working group acronym must be approved by
 the working group's chairs before it will be posted.
 
@@ -163,7 +163,7 @@ If the I-D is submitted as XML, the name and version of the document will be
 declared in the appropriate "name" and "version" attributes [RFC 7991], and the
 filename submitted must be of the form "name-version.xml".
 
-If the I-D is submitted as plain text, the name and version will appear on the
+If the I-D is submitted as plain-text, the name and version will appear on the
 documents first page, and the filename submitted must be of the form
 "name-version.txt".
 
@@ -190,7 +190,7 @@ Currently, the submission tool will accept both an XML and plain-text
 submission, as well as PDF and PostScript versions of the document. In such
 submissions, the XML is authoritative, if present, otherwise the plain-text is
 authoritative. It is expected that the tool will change to allow only the
-submission of XML or plain text, but not both, and to not accept other formats.
+submission of XML or plain-text, but not both, and to not accept other formats.
 
 If XML source is submitted, the Datatracker will generate plain-text and place
 it in the Archive. If v3 source is submitted, the Datatracker will also
@@ -250,7 +250,7 @@ consideration as early in their life-cycle as possible.
 If an Internet-Draft is prepared in XML, the tooling will ensure that
 required content is present, automatically provide selected boilerplate
 text, and handle the majority of formatting concerns. An Internet-Draft
-prepared as plain text requires more effort to ensure that the required
+prepared as plain-text requires more effort to ensure that the required
 content is present and in the right form.
 
 As Internet-Drafts are inputs into what might eventually be published as
@@ -263,7 +263,7 @@ with very few exceptions, apply to Internet-Drafts.
 
       * The date the document was generated
       * A list of authors/editors and their affiliations
-      * The group that originated the draft (if any)
+      * The group that originated the I-D (if any)
       * The intended status of the document
       * The set of RFCs this I-D intends to update or replace, if any
 
@@ -375,9 +375,9 @@ but are not intended to be published as RFCs.
 
 If you think that you, your company, or anyone else owns a patent or other
 Intellectual Property Rights (IPR) on the work described in the I-D, you should
-carefully read [BCP 79].  The first notice required in an I-D, described
+carefully read [BCP 79]. The first notice required in an I-D, described
 earlier in this section, obligates you to send an IPR disclosure statement
-under certain circumstances.  In particular, when preparing a document intended
+under certain circumstances. In particular, when preparing a document intended
 to be included in the IETF Stream, before submitting the I-D, discussing it
 with the working group chairs or Area Directors is advised.
 
@@ -396,8 +396,8 @@ satisfactory abstract can be constructed in part from material from the
 Introduction section, but a good abstract will be shorter, less detailed, and
 broader in scope than the Introduction. Simply copying and pasting the first
 few paragraphs of the Introduction is tempting, but it generally results in an
-Abstract that is both incomplete and redundant.  An Abstract will typically be
-five to ten lines.  An Abstract of more than 20 lines or fewer than three lines
+Abstract that is both incomplete and redundant. An Abstract will typically be
+five to ten lines. An Abstract of more than 20 lines or fewer than three lines
 is generally not acceptable.
 
 - [ ] Ensure the Internet-Draft contains an appropriate Abstract.
@@ -425,14 +425,14 @@ this is a judgment call, but please err on the side of explicitness.
 #### Security Considerations
 
 [RFC 3552] provides current best guidance about writing a Security
-Considerations section.  This section is mandatory in all documents.
+Considerations section. This section is mandatory in all documents.
 
 The text of this section must have a meaningful exploration of security issues
 raised by the proposal, which should include both risks and a description of
-solutions or workarounds.  It is rare that technical work can legitimately make
+solutions or workarounds. It is rare that technical work can legitimately make
 a claim like "This protocol introduces no security considerations," so it needs
 to be fairly obvious for that to be believable, or the document will be
-returned for further development.  Procedural documents, however, more commonly
+returned for further development. Procedural documents, however, more commonly
 can claim no added security risk.
 
 Some other references that may be useful when crafting this section are:
@@ -458,7 +458,7 @@ publication of the document as an RFC.
 
 - [ ] Check the existing IANA registry for registration policy rules
       and any requirements for specific requests for registration of
-      protocol parameters.  Individual RFCs have specific criteria and
+      protocol parameters. Individual RFCs have specific criteria and
       instructions that should be followed.
 
 - [ ] If the registration policy is "Expert Review" or "Specification
@@ -466,7 +466,7 @@ publication of the document as an RFC.
       requested parameter information is properly formed, consider
       initiating reviews with IANA or sending to the appropriate mailing
       list (where applicable; see the RFC for that the registry for
-      instructions).  If there are any questions about what type of approval
+      instructions). If there are any questions about what type of approval
       is needed from the Designated Expert (for example, if the registration
       should be made immediately or only pre-reviewed before publication),
       please contact IANA.
@@ -507,13 +507,13 @@ the changes
 #### References
 
 A References section must be present and split into normative and informative
-sections.  For guidance, see [RFC 7322] and [REFERENCE].
+sections. For guidance, see [RFC 7322] and [REFERENCE].
 
 Normative and informative references to non-IETF documents are permitted.
 However, it is best to minimize such normative references, because assessing
 their status when the IETF document advances on the standards track is very
-difficult. It is important to use the exact title, author name(s),
-organization  and publication date. External specifications referenced by
+difficult. It is important to use the exact title, author name(s), organization
+and publication date. External specifications referenced by
 Internet-Standard-level Technical Specifications or Applicability Statements
 must be to open external standards, per [RFC 2026].
 
@@ -522,10 +522,10 @@ must be to open external standards, per [RFC 2026].
 
 - [ ] Verify that references is stable and resolvable.
 
-       A bare URI is not generally considered a stable reference.  For web-only
+       A bare URI is not generally considered a stable reference. For web-only
        documents, adding a reference number, title , and/or an author will help
-       make the reference more stable.  See [RFC 7322] for specific guidance
-       about URIs in Internet-Drafts.  Judgment can be used here; the stability
+       make the reference more stable. See [RFC 7322] for specific guidance
+       about URIs in Internet-Drafts. Judgment can be used here; the stability
        of normative references is even more important than the stability of
        informative references.
 
@@ -641,14 +641,14 @@ Schema, to allow element extensions.
 
         Addresses used in examples should use fully qualified domain names
         instead of literal IP addresses, and should use example FQDNs such as
-        "foo.example.com" instead of real-world FQDNs.  See [RFC 2606] for
-        example domain names that can be used.  Note that the entire
+        "foo.example.com" instead of real-world FQDNs. See [RFC 2606] for
+        example domain names that can be used. Note that the entire
         “.example” TLD is reserved, allowing for arbitrary subdomains (in
         particular, ones that are not considered same-origin on the Web).
 
 - [ ] Verify that literal IP addresses are from the example ranges
 
-        There are also ranges of IP addresses set aside for this purpose.  For
+        There are also ranges of IP addresses set aside for this purpose. For
         IPv4, these are defined in [RFC 6890]; for IPv6, see [RFC 3849]. Per
         the IAB Statement on IPv6 [IAB-IPV6], IPv6 examples should be used.
 
@@ -666,7 +666,7 @@ Schema, to allow element extensions.
 
 #### Stale Text
 
-Avoid text that will become outdated after the I-D is published.  Examples
+Avoid text that will become outdated after the I-D is published. Examples
 include non-permanent URLs, mentions of specific mailing lists as places to
 send comments on a document, or referring to specific WGs as a place to perform
 specific future actions (e.g., reviewing follow-up documents). In some cases
@@ -685,15 +685,15 @@ to an appropriate WG or another set of experts.
 #### Protocol Issues
 
 This section provides some general guidance that will help to avoid extended
-discussion during the document review and approval process.  The IESG has
+discussion during the document review and approval process. The IESG has
 compiled a list of useful topics to consider [TOPICS].
 
 - [ ] Ensure the I-D avoids IPv4 specificity. Both IPv4 and IPv6 must be
       supportable, unless the protocol is naturally IPv4 specific or IPv6
-      specific.  Expect an IPv4-only protocol to be met with friction.
+      specific. Expect an IPv4-only protocol to be met with friction.
 
 - [ ] Ensure the I-D does not introduce congestion issues. No application can
-      be permitted to cause catastrophic congestion.  See [RFC 2914] for
+      be permitted to cause catastrophic congestion. See [RFC 2914] for
       details. Applications using TCP or SCTP will normally fulfill this
       requirement automatically. Applications using UDP should adhere to the
       guidance in [RFC 8085].
@@ -704,8 +704,8 @@ compiled a list of useful topics to consider [TOPICS].
       exactly what order the operations are done. Pay special attention to any
       area reserved for the checksum itself.
 
-- [ ] Verify that all user-visible text fields are internationalizable.  See
-      [RFC 2277]. For most cases, this means UTF-8 [RFC 3629].  But note that
+- [ ] Verify that all user-visible text fields are internationalizable. See
+      [RFC 2277]. For most cases, this means UTF-8 [RFC 3629]. But note that
       it is often not sufficient to simply say that strings are encoded with
       UTF-8 (see below about comparisons), especially when talking about
       case-(in)sensitivity, case folding, and the like.
@@ -719,12 +719,12 @@ compiled a list of useful topics to consider [TOPICS].
 ## Format
 
 Formatting is automatically taken care of when Internet-Drafts are submitted in
-XML form. Authors of such drafts have very few formatting issues to consider.
+XML form. Authors of such I-Ds have very few formatting issues to consider.
 The primary consideration is ensuring the tools are able to render the various
 formats. In particular, the content of the XML must be amenable to rendering
 with the 72 character per line restriction in the text format.
 
-Authors preparing Internet-Drafts in plain text must ensure the document
+Authors preparing Internet-Drafts in plain-text must ensure the document
 conforms to many formatting rules.
 
 The format constraints for a plain-text I-D are primarily the same as those for
