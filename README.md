@@ -266,7 +266,7 @@ in the Format section below.
 
 - [ ] Ensure that the I-D contains each of the following sections:
 
-      * IPR-Related Notices 
+      * IPR-Related Notices
       * Abstract
       * Introduction
       * Security Considerations
@@ -418,7 +418,7 @@ this is a judgment call, but please err on the side of explicitness.
 Considerations section.  This section is mandatory in all documents.
 
 The text of this section must have a meaningful exploration of security issues
-raised by the proposal, which should include both risks and da description of
+raised by the proposal, which should include both risks and a description of
 solutions or workarounds.  It is rare that technical work can legitimately make
 a claim like "This protocol introduces no security considerations," so it needs
 to be fairly obvious for that to be believable, or the document will be
@@ -490,7 +490,7 @@ the changes
 - [ ] Ensure the I-D clearly summarizes any changes made from the RFCs
       being updated or obsoleted.
 
-- [ ] Ensure any errata against RFCs that are being obsolated or updated
+- [ ] Ensure any errata against RFCs that are being obsoleted or updated
       have been considered, and that the I-D clearly identifies those that
       have been addressed.
 
@@ -546,7 +546,7 @@ published as RFCs simultaneously.
 
         To do so conflicts with the roles of the RFC Editor and the IESG. The
         title of the document should not imply a status. Avoid the use of the
-        terms Standard, Proposed, Draft, Experimental, Historic, Required, 
+        terms Standard, Proposed, Draft, Experimental, Historic, Required,
         Recommended, Elective, or Restricted in the I-D title. An I-D may
         indicate its intended status, if it were to be published as an RFC,
         by setting the status attribute of the seriesInfo element (see [RFC
@@ -701,7 +701,7 @@ compiled a list of useful topics to consider [TOPICS].
       case-(in)sensitivity, case folding, and the like.
 
 - [ ] If text fields are included in some calculations, like matching,
-      sorting, etc., verif that how those operations are applied to the
+      sorting, etc., verify that how those operations are applied to the
       Unicode/ISO 10646 character set must be described in detail. See
       "stringprep" [RFC 8264] for more information on the recommended way
       of handling comparisons.
@@ -712,16 +712,16 @@ Formatting is automatically taken care of when Internet-Drafts are submitted in
 XML form. Authors of such drafts have very few formatting issues to consider.
 The primary consideration is ensuring the tools are able to render the various
 formats. In particular, the content of the XML must be amenable to rendering
-with the 72 characther per line restriction in the text format.
+with the 72 character per line restriction in the text format.
 
 Authors preparing Internet-Drafts in plain text must ensure the document
-conforms to many formatting rules. 
+conforms to many formatting rules.
 
 The format constraints for a plain-text I-D are primarily the same as those for
 the text format of an RFC as specified in [RFC 7994]. One notable difference is
 that Internet-Drafts are paginated, and include running headers and footers.
 A few formatting requirements are highlighted here, but authors preparing
-plain-text documents should fully undertand the requirements in [RFC 7994],
+plain-text documents should fully understand the requirements in [RFC 7994],
 [RFC 7841], [RFC 7332] and [RFCSTYLE].
 
 The submission tool will block submission for many formatting errors, and flag
@@ -744,9 +744,9 @@ overlooked:
       be numbered.
 
 - [ ] Verify that no text extends beyond the 72nd column of a line. This
-      limit is especially imporant for diagrams and code, which the RFC
-      Editor may not be able to trivially reformat to fall within the 
-      margins. 
+      limit is especially important for diagrams and code, which the RFC
+      Editor may not be able to trivially reformat to fall within the
+      margins.
 
 - [ ] Verify that source code does not extend beyond the 69th column.
 
@@ -771,11 +771,11 @@ overlooked:
       numbered.
 
 - [ ] Verify that the appropriate boilerplate text in the IPR related sections
-      is reproduced exactly (see the IPR-Related Notices section). In 
-      particular, ensure that the names of RFCs contained in that content are 
+      is reproduced exactly (see the IPR-Related Notices section). In
+      particular, ensure that the names of RFCs contained in that content are
       not reformatted as references.
 
-- [ ] Verify that the I-D is well formated for readability and clarity.
+- [ ] Verify that the I-D is well formatted for readability and clarity.
 
 ## References
 
