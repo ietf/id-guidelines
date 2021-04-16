@@ -811,10 +811,6 @@ overlooked:
 
 ## References
 
-
-
-
------
 [ABBREV](https://www.rfc-editor.org/materials/abbrev.expansion.txt)
 [ABNF-CHECK](https://tools.ietf.org/tools/bap/)
 [ARCHIVE](https://www.ietf.org/archive/id)
@@ -874,7 +870,6 @@ overlooked:
 [XML2RFC-DOC](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html)
 [XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
 [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
------
 
 ## Acknowledgments
 
