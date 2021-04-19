@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Internet-Drafts (I-Ds) are the basic work item of the IETF. They are the
+Internet-Drafts (I-Ds) are the basic work items of the IETF. They are the
 primary inputs into what may eventually be published as a Request for Comment
 (RFC).
 
@@ -31,8 +31,8 @@ many sources. The following resources should be consulted
 for definitive details:
 
   * The IETF Standards Process is described in [RFC 2026].
-  * The IETF rules concerning copyright are described in [BCP 78]
-  * The IETF rules on IPR are described in [BCP 79]
+  * The IETF rules concerning copyright are described in [BCP 78].
+  * The IETF rules on IPR are described in [BCP 79].
   * The IETF Trust Legal Provisions Relating to IETF Documents [TLP], called
     "the TLP" for short, provides many details about copyright policy and
     practice.
@@ -64,10 +64,10 @@ Internet-Draft Repository [REPOSITORY].
 Versions of Internet-Drafts are removed from the Repository when any of the
 following occur:
 
-  * the I-D is updated with a new version
-  * the I-D is replaced by another Internet-Draft
-  * the I-D is published as an RFC
-  * the I-D expires.
+  * The I-D is updated with a new version.
+  * The I-D is replaced by another Internet-Draft.
+  * The I-D is published as an RFC.
+  * The I-D expires.
 
 An I-D expires 185 days after the I-D was placed in the repository unless it
 is in a state that prevents it from expiring. Examples of such states include
@@ -80,7 +80,7 @@ the Repository. Removing an I-D from the Archive occurs only in exceptional
 circumstances, described in this IESG Statement [ID-REMOVAL].
 
 Even though Internet-Drafts are kept in the Archive, they are not an archival
-series, and should not be cited or quoted as anything other than "work in
+series and should not be cited or quoted as anything other than "work in
 progress".
 
 ## Internet-Draft Names
@@ -89,7 +89,7 @@ Internet-Draft names appear inside the I-D, and are used as components of
 filenames for the various formats the I-D may appear in. The characters
 that may appear in an I-D name are restricted:
 
-- [ ] Ensure that the I-D name consist only of the lower case letters a-z,
+- [ ] Ensure that the I-D name consists only of the lowercase letters a-z,
       the digits 0-9, and hyphens.
 
 The name of an I-D consists of several components, separated by a hyphen.
@@ -97,7 +97,7 @@ No empty components are allowed. That is, consecutive hyphens may not appear
 in an I-D name.
 
 The first component identifies the I-D as a draft (as opposed to other
-document types, such as charters or reviews).
+document types, such as a charter or a review).
 
 - [ ] Verify that the I-D name begins with "draft-"
 
@@ -144,10 +144,10 @@ If the I-D is targeted at or has been adopted by a group, the group's acronym
 should be added to the name just after the second component, separated by a
 hyphen.
 
-- [ ] Ensure adopted or group targeted I-Ds identify the group just after the
+- [ ] Ensure adopted or group-targeted I-Ds identify the group just after the
       second component by including the group's acronym.
 
-Note again that if the I-D has not been adopted into a stream, and identifies a
+Note again that if the I-D has not been adopted into a stream, and it identifies a
 stream in the second component, it will be rejected or replaced. In particular
 for IETF stream documents, the first version of an I-D with a name that begins
 with 'draft-ietf-acronym-' for any working group acronym must be approved by
@@ -166,8 +166,8 @@ If the I-D is submitted as XML, the name and version of the document will be
 declared in the appropriate "name" and "version" attributes [RFC 7991], and the
 filename submitted must be of the form "name-version.xml".
 
-If the I-D is submitted as plain-text, the name and version will appear on the
-documents first page, and the filename submitted must be of the form
+If the I-D is submitted as plain text, the name and version will appear on the
+document's first page, and the filename submitted must be of the form
 "name-version.txt".
 
 Convention dictates that an individual submission seeking adoption by a
@@ -191,11 +191,11 @@ submission will be accepted.
 
 Currently, the submission tool will accept both an XML and plain-text
 submission, as well as PDF and PostScript versions of the document. In such
-submissions, the XML is authoritative, if present, otherwise the plain-text is
+submissions, the XML is authoritative, if present, otherwise the plain text is
 authoritative. It is expected that the tool will change to allow only the
-submission of XML or plain-text, but not both, and to not accept other formats.
+submission of XML or plain text, but not both, and to not accept other formats.
 
-If XML source is submitted, the Datatracker will generate plain-text and place
+If XML source is submitted, the Datatracker will generate plain text and place
 it in the Archive. If v3 source is submitted, the Datatracker will also
 generate HTML and place it in the Archive. The Datatracker also presents
 on-demand generated html-ized views of the plain-text versions of I-Ds.
@@ -204,9 +204,9 @@ The submission tool will double-check many, but not all, of the guidance points
 called out in this document. Authors are expected to have manually applied the
 guidance before submission.
 
-While many of the requirements pointed to by this document are for RFCs,
+While many of the requirements highlighted by this document are for RFCs,
 Internet-Drafts are expected to adhere to them to the extent possible. In
-particular, IETF stream I-Ds submitted to the IESG for must follow all of the
+particular, IETF stream I-Ds submitted to the IESG must follow all of the
 guidance. Working groups are encouraged to require the guidance be followed for
 I-Ds entering Working Group Last Call. I-Ds will progress through the review
 and publication process more efficiently the earlier the guidance is followed
@@ -215,7 +215,7 @@ in the I-D.
 If authors are unable to submit an I-D through the Datatracker, they may make a
 manual-post request by sending the I-D via email to support@ietf.org. The
 message may contain the I-D as an attachment, or a URL that will resolve to the
-I-D. The I-D must be a stand-alone document in either XML or plain-text format.
+I-D. The I-D must be a standalone document in either XML or plain-text format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
 
@@ -245,7 +245,7 @@ the replacement before the relationship is added to the Datatracker.
 
 Internet-Drafts and RFCs have certain required content. I-Ds should take the
 accrued knowledge on frequent and particularly important topics into
-consideration as early in their life-cycle as possible.
+consideration as early in their life cycle as possible.
 
 
 ### Required Content
@@ -253,7 +253,7 @@ consideration as early in their life-cycle as possible.
 If an Internet-Draft is prepared in XML, the tooling will ensure that
 required content is present, automatically provide selected boilerplate
 text, and handle the majority of formatting concerns. An Internet-Draft
-prepared as plain-text requires more effort to ensure that the required
+prepared as plain text requires more effort to ensure that the required
 content is present and in the right form.
 
 As Internet-Drafts are inputs into what might eventually be published as
@@ -317,12 +317,12 @@ as needed.
 Authors preparing plain-text submissions must carefully reproduce the
 text most appropriate for the Internet-Draft.
 
-IETF stream documents authors must not select boilerplate that prohibits
+Authors of IETF stream documents must not select boilerplate that prohibits
 publication as an RFC.
 
 A standard Copyright Notice and Disclaimer must be included. This will be
 generated automatically for authors preparing XML submissions. Authors of
-plain-text submissions should refer to the [TLP] section 6 for exact text
+plain-text submissions should refer to the [TLP] section 6 for the exact text
 to reproduce.
 
 - [ ] Verify that one of the approved IPR boilerplate selections are
@@ -332,7 +332,7 @@ to reproduce.
 - [ ] Verify that the most appropriate IPR boilerplate for the I-D is
       indicated.
 
-Any Internet-Draft submitted that does not select on of the required IPR
+Any Internet-Draft submitted that does not select one of the required IPR
 boilerplate statements will be rejected. The IETF Secretariat cannot add
 a selection for the author.
 
@@ -360,7 +360,7 @@ to be published as an RFC:
 This will be automatically generated by the tools from XML source if the
 ipr attribute value "noDerivativesTrust200902" is selected.
 
-These notices may not be used with any IETF standards-track document or with
+These notices may not be used with any IETF Standards Track document or with
 most working group documents, except as discussed in [BCP 78], since the IETF
 must retain change control over its documents and the ability to augment,
 clarify, and enhance the original contribution in accordance with the IETF
@@ -394,7 +394,7 @@ useful. In addition to its function in the document, the Abstract section is
 used as a summary in publication announcements and in the online index of I-Ds
 [INDEX].
 
-Composing a useful Abstract is a non-trivial writing task. Often, a
+Composing a useful Abstract is a nontrivial writing task. Often, a
 satisfactory abstract can be constructed in part from material from the
 Introduction section, but a good abstract will be shorter, less detailed, and
 broader in scope than the Introduction. Simply copying and pasting the first
@@ -405,7 +405,7 @@ is generally not acceptable.
 
 - [ ] Ensure the Internet-Draft contains an appropriate Abstract.
 
-An Abstract should be complete in itself, so it should not contain no citations
+An Abstract should be complete in itself, so it should not contain citations
 unless they are completely defined within the Abstract. Abbreviations appearing
 in the Abstract should generally be expanded in parentheses. There is a set of
 reasonable exceptions to this rule; for example, readers don't need to be
@@ -440,13 +440,13 @@ can claim no added security risk.
 
 Some other references that may be useful when crafting this section are:
 
-  * Security glossary v2 [RFC 4949]
-  * Use of IPsec v2 [RFC 5406]
-  * Guidelines for Authors and Reviewers of MIB documents [RFC 4181]
+  * IETF stream document  [RFC 4949]
+  * Guidelines for Specifying the Use of IPsec Version 2 [RFC 5406]
+  * Guidelines for Authors and Reviewers of MIB Documents [RFC 4181]
   * Security Guidelines for IETF MIB Modules [MIB-SEC]
   * YANG Security Considerations [YANG-SEC]
 
-- [ ] Verify that a meaningful Security Consideration section is present
+- [ ] Verify that a meaningful Security Consideration section is present.
 
 #### IANA Considerations
 
@@ -521,10 +521,10 @@ and publication date. External specifications referenced by
 Internet-Standard-level Technical Specifications or Applicability Statements
 must be to open external standards, per [RFC 2026].
 
-- [ ] Ensure all needed references are present, and correctly identified
+- [ ] Ensure all needed references are present and correctly identified
       as normative or informative.
 
-- [ ] Verify that references is stable and resolvable.
+- [ ] Verify that references are stable and resolvable.
 
        A bare URI is not generally considered a stable reference. For web-only
        documents, adding a reference number, title , and/or an author will help
@@ -536,8 +536,9 @@ must be to open external standards, per [RFC 2026].
 - [ ] Verify that references to other Internet-Drafts use this format:
       author, "title", name-version (work in progress), date. For instance:
 
-        Foo, "The Specific Subject", draft-foo-bar-specific-subject-00 (work
-        in progress, April 2021.
+        Foo, "The Specific Subject", Work in Progress, 
+        Internet-Draft, draft-foo-bar-specific-subject-00, 
+        17 April 2021.
 
 Note that normative references to I-Ds will cause the referencing document to
 wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs.
@@ -572,11 +573,11 @@ published as RFCs simultaneously.
 
 ### Content Considerations
 
-#### Internet-Drafts are not RFCs
+#### Internet-Drafts Are Not RFCs
 
 - [ ] Verify that the I-D does not refer to itself as an RFC or a draft RFC.
 
-- [ ] Verify that the I-D does neither states nor implies that it has any
+- [ ] Verify that the I-D neither states nor implies that it has any
       standards status.
 
         To do so conflicts with the roles of the RFC Editor and the IESG. The
@@ -614,14 +615,14 @@ An online service is available for MIB syntax checking at [LIBSMI]. This
 allows you to extract the MIB module from a document for your own local use,
 but you can also directly run a syntax check.
 
-You can also download the libsmi tools for local use. In most cases , there
+You can also download the libsmi tools for local use. In most cases, there
 should be no errors or warnings present in the report. Please evaluate all
 diagnostic messages before assuming that they are OK. If in doubt, feel free
 to check on the ietfmibs@ietf.org mailing list or with the OPS ADs.
 
 - [ ] Ensure that MIB modules compile cleanly
 
-- [ ] Verify that I-D follows the guidelines in [RFC 4181] as updated by [RFC
+- [ ] Verify that the I-D follows the guidelines in [RFC 4181] as updated by [RFC
       4841].
 
 ##### ABNF
@@ -659,7 +660,7 @@ Schema, to allow element extensions.
 
 #### Example Addresses
 
-- [ ] Verify that examples use example FQDNs whenever possible
+- [ ] Verify that examples use example FQDNs whenever possible.
 
         Addresses used in examples should use fully qualified domain names
         instead of literal IP addresses, and should use example FQDNs such as
@@ -668,7 +669,7 @@ Schema, to allow element extensions.
         “.example” TLD is reserved, allowing for arbitrary subdomains (in
         particular, ones that are not considered same-origin on the Web).
 
-- [ ] Verify that literal IP addresses are from the example ranges
+- [ ] Verify that literal IP addresses are from the example ranges.
 
         There are also ranges of IP addresses set aside for this purpose. For
         IPv4, these are defined in [RFC 6890]; for IPv6, see [RFC 3849]. Per
@@ -734,19 +735,19 @@ compiled a list of useful topics to consider [TOPICS].
 
 - [ ] If text fields are included in some calculations, like matching,
       sorting, etc., verify that how those operations are applied to the
-      Unicode/ISO 10646 character set must be described in detail. See
+      Unicode/ISO 10646 character set are described in detail. See
       "stringprep" [RFC 8264] for more information on the recommended way
       of handling comparisons.
 
 ## Format
 
-Formatting is automatically taken care of when Internet-Drafts are submitted in
+Formatting is automatically handled when Internet-Drafts are submitted in
 XML form. Authors of such I-Ds have very few formatting issues to consider.
 The primary consideration is ensuring the tools are able to render the various
 formats. In particular, the content of the XML must be amenable to rendering
 with the 72 character per line restriction in the text format.
 
-Authors preparing Internet-Drafts in plain-text must ensure the document
+Authors preparing Internet-Drafts in plain text must ensure the document
 conforms to many formatting rules.
 
 The format constraints for a plain-text I-D are primarily the same as those for
@@ -756,12 +757,12 @@ A few formatting requirements are highlighted here, but authors preparing
 plain-text documents should fully understand the requirements in [RFC 7994],
 [RFC 7841], [RFC 7332], [RFC 7322], [RFCSTYLE], and [HEADERS-AND-BOILERPLATE].
 
-The submission tool will block submission for many formatting errors, and flag
+The submission tool will block submission for many formatting errors and flag
 many others. The [IDNITS] tool can be used to identify those so they can be
 corrected before submission. Well-formatted I-Ds tend to progress through the
 review process more quickly. When an I-D is approved for publication as an RFC,
 the RFC Editor can take care of a few small formatting errors. However, if many
-formatting errors exist the document will be returned to the stream requesting
+formatting errors exist, the document will be returned to the stream requesting
 publication for fixes. Please be aware that not conforming to the formatting
 rules will most probably delay publication and consume time that can be spent
 on other work.
@@ -802,12 +803,16 @@ overlooked:
 - [ ] Verify that the "Status of This Memo" and "Abstract" sections are not
       numbered.
 
-- [ ] Verify that the appropriate boilerplate text in the IPR related sections
+- [ ] Verify that the appropriate boilerplate text in the IPR-related sections
       is reproduced exactly (see the IPR-Related Notices section). In
       particular, ensure that the names of RFCs contained in that content are
       not reformatted as references.
 
 - [ ] Verify that the I-D is well formatted for readability and clarity.
+
+- [ ] If the I-D has Contributors and/or Acknowlegments sections, verify 
+      that the sections are unnumbered and placed after the References section 
+      and any appendices. See Section 4 of [RFC 7322].
 
 ## References
 
