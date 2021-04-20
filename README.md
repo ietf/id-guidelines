@@ -440,7 +440,7 @@ can claim no added security risk.
 
 Some other references that may be useful when crafting this section are:
 
-  * IETF stream document  [RFC 4949]
+  * Internet Security Glossary, Version 2 [RFC 4949]
   * Guidelines for Specifying the Use of IPsec Version 2 [RFC 5406]
   * Guidelines for Authors and Reviewers of MIB Documents [RFC 4181]
   * Security Guidelines for IETF MIB Modules [MIB-SEC]
@@ -533,8 +533,8 @@ must be to open external standards, per [RFC 2026].
        of normative references is even more important than the stability of
        informative references.
 
-- [ ] Verify that references to other Internet-Drafts use this format:
-      author, "title", name-version (work in progress), date. For instance:
+- [ ] Verify that references to other Internet-Drafts are formatted as shown
+      in [RFC7322]:
 
         Foo, "The Specific Subject", Work in Progress, 
         Internet-Draft, draft-foo-bar-specific-subject-00, 
