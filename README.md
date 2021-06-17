@@ -247,7 +247,6 @@ Internet-Drafts and RFCs have certain required content. I-Ds should take the
 accrued knowledge on frequent and particularly important topics into
 consideration as early in their life cycle as possible.
 
-
 ### Required Content
 
 If an Internet-Draft is prepared in XML, the tooling will ensure that
@@ -310,8 +309,8 @@ forms of the boilerplate texts are maintained at [RFCEDITOR-MEMOSTATUS].
 Authors preparing XML submissions indicate which boilerplate text to use by
 providing one of a set of enumerated values to the ipr attribute of the rfc
 element in the XML source. The tooling generates the actual required text. See
-[RFC 7991] Appendix A1 for the available ipr attribute values. The majority
-of IETF stream documents I-Ds indicate "trust200902" or "pre5378Trust200902"
+[RFC 7991] Appendix A.1 for the available ipr attribute values. The majority
+of IETF stream I-Ds indicate "trust200902" or "pre5378Trust200902"
 as needed.
 
 Authors preparing plain-text submissions must carefully reproduce the
@@ -483,13 +482,13 @@ publication of the document as an RFC.
       to this document that should be added for any registrations and any
       that should replace existing references.
 
+- [ ] If the document has considerable instructions for IANA actions, request
+      an early review of the document by IANA.
+
 - [ ] If there is no action for IANA, verify that this section explicitly says
       “This document has no IANA actions.” It is often helpful for the IANA
       Considerations section to remain in place upon publication as an RFC
       even if there are no actions.
-
-- [ ] If the document has considerable instructions for IANA actions, request
-      an early review of the document by IANA.
 
 For more specific guidelines regarding structure and content for writing IANA
 Considerations sections, please see [RFC 8126] and [IANA].
@@ -597,6 +596,16 @@ especially those in Sections 6 and 7, should be followed. "SHOULD" is
 especially problematic: it needs to be clear why SHOULD is used rather than
 MUST, and what the implications are of varying from the recommendation.
 
+Note that BCP 14 is comprised of two documents.  The later one, RFC 8174,
+includes the most recent boilerplate text that must be included in documents
+using this language.
+
+#### Coding Languages
+
+When coding languages are used in Internet-Drafts, it is necessary to include
+as a reference the formal definition of that coding language (e.g., C87, C99,
+etc.).
+
 #### Formal Languages
 
 - [ ] Verify that any use of formal languages conforms with the IESG statement
@@ -643,12 +652,13 @@ an appropriate XML Schema, DTD, or another standard validation mechanism that
 is structurally and syntactically correct.
 
 Other guidelines for the use of XML in IETF protocols can be found in BCP 70
-[RFC 3470].
+[RFC 3470].  Internet-Drafts that include an XML Schema should include a normative
+reference to either [XMLSCHEMA11-1] or [XMLSCHEMA11-2].
 
 - [ ] Verify that any XML in the I-D is well-formed, and if it is intended to
       be valid, confirm that it validates against the appropriate definition.
 
-XML provides structures, such as the "<any>" element information item in XML
+XML provides structures, such as the "`<any>`" element information item in XML
 Schema, to allow element extensions.
 
 - [ ] Ensure the I-D contains clear guidance on how, when, and where any
@@ -739,6 +749,11 @@ compiled a list of useful topics to consider [TOPICS].
       "stringprep" [RFC 8264] for more information on the recommended way
       of handling comparisons.
 
+#### Inclusive Language
+
+The IESG has made a statement recommending authors review [NISTIR 8366] for
+guidelines on using inclusive terminology.
+ 
 ## Format
 
 Formatting is automatically handled when Internet-Drafts are submitted in
@@ -777,7 +792,7 @@ overlooked:
       be numbered.
 
 - [ ] Verify that no text extends beyond the 72nd column of a line. This
-      limit is especially important for diagrams and code, which the RFC
+      limit is especially important for diagrams, which the RFC
       Editor may not be able to trivially reformat to fall within the
       margins.
 
@@ -836,6 +851,7 @@ overlooked:
 - [KRAMDOWN-RFC](https://github.com/cabo/kramdown-rfc2629)
 - [LIBSMI](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/)
 - [MIB-SEC](https://trac.ietf.org/trac/ops/wiki/mib-security)
+- [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
 - [REFERENCE](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/)
 - [REPOSITORY](https://www.ietf.org/id)
 - [RFC 2026](https://rfc-editor.org/info/rfc2026)
@@ -874,6 +890,8 @@ overlooked:
 - [XML2RFC](https://pypi.org/project/xml2rfc/)
 - [XML2RFC-DOC](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html)
 - [XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
+- [XMLSCHEMA11-1](https://www.w3.org/TR/xmlschema11-1/)
+- [XMLSCHEMA11-2](https://www.w3.org/TR/xmlschema11-2/)
 - [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
 
 ## Acknowledgments
