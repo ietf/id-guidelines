@@ -536,13 +536,19 @@ of normative references is even more important than the stability of
 informative references.
 
 - [ ] Verify that references to other Internet-Drafts are formatted as shown
-      in [RFC7322]:
+      in [RFC7322].
+      
+For example:
 
-        Foo, "The Specific Subject", Work in Progress, 
-        Internet-Draft, draft-foo-bar-specific-subject-00, 
-        17 April 2021.
+    [RFCXXXX] Last name, First initial., Ed. (if applicable),
+    "RFC Title", Sub-series number (if applicable),
+    RFC number, Date of publication,
+    http://www.rfc-editor.org/info/rfc#.
 
-Note that normative references to I-Ds will cause the referencing document to
+Note that RFC 7322 is, at the time of publication of this guide, under
+revision and the format shown here is expected to change.
+
+Also note that normative references to I-Ds will cause the referencing document to
 wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs.
 They may in some cases become a cluster of documents [CLUSTER] that will be
 published as RFCs simultaneously.
@@ -668,6 +674,16 @@ Schema, to allow element extensions.
       Description Framework (RDF) Schemas are being registered with IANA using
       the procedures described in BCP 81 [RFC 3688].
 
+##### YANG
+ 
+YANG (Yet Another Next Generation) is a data modeling language for data
+sent over network management protocols such as NETCONF and RESTCONF.
+Specifications that present a YANG module should test, review, and format
+them using the tools and guidance presented at [YANG-TOOLS].
+ 
+Other useful references when considering inclusion of a YANG module
+include [RFC 8340], [RFC 8407], and [YANG-SEC].
+ 
 #### Example Addresses
 
 - [ ] Verify that examples use example FQDNs whenever possible.
@@ -881,6 +897,7 @@ overlooked:
 - [RFC 8174](https://rfc-editor.org/info/rfc8174)
 - [RFC 8264](https://rfc-editor.org/info/rfc8264)
 - [RFC 8279](https://rfc-editor.org/info/rfc8279)
+- [RFC 8340](https://rfc-editor.org/info/rfc8340)
 - [RFCEDITOR-MEMOSTATUS](https://www.rfc-editor.org/materials/status-memos.txt)
 - [RFCEDITOR-V3FAQ](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html)
 - [RFCPUB](https://www.rfc-editor.org/pubprocess/)
@@ -893,6 +910,7 @@ overlooked:
 - [XMLSCHEMA11-1](https://www.w3.org/TR/xmlschema11-1/)
 - [XMLSCHEMA11-2](https://www.w3.org/TR/xmlschema11-2/)
 - [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
+- [YANG-TOOLS](https://trac.ietf.org/trac/ops/wiki/yang-review-tools)
 
 ## Acknowledgments
 
