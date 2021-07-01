@@ -116,6 +116,7 @@ editor.
 The second component must not be easily confused with a group acronym. The
 following strings for the second component are reserved for their respective
 organizations (some of which are historic):
+
   * iana
   * iaoc
   * iesg
@@ -129,12 +130,14 @@ to use heuristics when tying to locate the second component.
 
 - [ ] Ensure the second component reasonably identifies the source of the I-D.
 
-      If the I-D has been adopted by a stream, ensure the second component is
-        * ietf for the IETF stream
-        * iab for the IAB stream
-        * irtf for the IRTF stream
-      Otherwise, ensure that the second component is not a group acronym or a
-      reserved string, is not objectionable, and does not introduce confusion.
+If the I-D has been adopted by a stream, ensure the second component is:
+
+  * ietf for the IETF stream
+  * iab for the IAB stream
+  * irtf for the IRTF stream
+
+Otherwise, ensure that the second component is not a group acronym or a
+reserved string, is not objectionable, and does not introduce confusion.
 
 Note that any I-D submitted with one of these stream identifiers in the second
 component that has not been adopted by the indicated stream will either be
@@ -247,7 +250,6 @@ Internet-Drafts and RFCs have certain required content. I-Ds should take the
 accrued knowledge on frequent and particularly important topics into
 consideration as early in their life cycle as possible.
 
-
 ### Required Content
 
 If an Internet-Draft is prepared in XML, the tooling will ensure that
@@ -264,11 +266,11 @@ with very few exceptions, apply to Internet-Drafts.
 
 - [ ] Ensure that the I-D correctly provides the following:
 
-      * The date the document was generated
-      * A list of authors/editors and their affiliations
-      * The group that originated the I-D (if any)
-      * The intended status of the document
-      * The set of RFCs this I-D intends to update or replace, if any
+ * The date the document was generated
+ * A list of authors/editors and their affiliations
+ * The group that originated the I-D (if any)
+ * The intended status of the document
+ * The set of RFCs this I-D intends to update or replace, if any
 
 See [RFC 7841] for specific details.
 
@@ -279,22 +281,22 @@ in the Format section below.
 
 - [ ] Ensure that the I-D contains each of the following sections:
 
-      * IPR-Related Notices
-      * Abstract
-      * Introduction
-      * Security Considerations
-      * IANA Considerations
-      * References
-      * Authors' Addresses
+ * IPR-Related Notices
+ * Abstract
+ * Introduction
+ * Security Considerations
+ * IANA Considerations
+ * References
+ * Authors' Addresses
 
 - [ ] If the document uses [BCP 14] normative language, ensure the unchanged
-      boilerplate text from BPC 14 is present in the I-D, and that BCP 14
+      boilerplate text from BCP 14 is present in the I-D, and that BCP 14
       is normatively referenced.
 
-         * Note that BCP 14 is made up of both [RFC 2119]
-           and [RFC 8174], and they must be cited as described in the latter
-           document. Please use the boilerplate text exactly as specified in
-           RFC 8174.
+Note that BCP 14 is made up of both [RFC 2119]
+and [RFC 8174], and they must be cited as described in the latter
+document. Please use the boilerplate text exactly as specified in
+RFC 8174.
 
 - [ ] If the I-D intends to obsolete or update existing RFCs, ensure there
       is a "Summary of Changes" section.
@@ -310,8 +312,8 @@ forms of the boilerplate texts are maintained at [RFCEDITOR-MEMOSTATUS].
 Authors preparing XML submissions indicate which boilerplate text to use by
 providing one of a set of enumerated values to the ipr attribute of the rfc
 element in the XML source. The tooling generates the actual required text. See
-[RFC 7991] Appendix A1 for the available ipr attribute values. The majority
-of IETF stream documents I-Ds indicate "trust200902" or "pre5378Trust200902"
+[RFC 7991] Appendix A.1 for the available ipr attribute values. The majority
+of IETF stream I-Ds indicate "trust200902" or "pre5378Trust200902"
 as needed.
 
 Authors preparing plain-text submissions must carefully reproduce the
@@ -483,13 +485,13 @@ publication of the document as an RFC.
       to this document that should be added for any registrations and any
       that should replace existing references.
 
+- [ ] If the document has considerable instructions for IANA actions, request
+      an early review of the document by IANA.
+
 - [ ] If there is no action for IANA, verify that this section explicitly says
       “This document has no IANA actions.” It is often helpful for the IANA
       Considerations section to remain in place upon publication as an RFC
       even if there are no actions.
-
-- [ ] If the document has considerable instructions for IANA actions, request
-      an early review of the document by IANA.
 
 For more specific guidelines regarding structure and content for writing IANA
 Considerations sections, please see [RFC 8126] and [IANA].
@@ -526,21 +528,27 @@ must be to open external standards, per [RFC 2026].
 
 - [ ] Verify that references are stable and resolvable.
 
-       A bare URI is not generally considered a stable reference. For web-only
-       documents, adding a reference number, title , and/or an author will help
-       make the reference more stable. See [RFCSTYLE] for specific guidance
-       about URIs in Internet-Drafts. Judgment can be used here; the stability
-       of normative references is even more important than the stability of
-       informative references.
+A bare URI is not generally considered a stable reference. For web-only
+documents, adding a reference number, title , and/or an author will help
+make the reference more stable. See [RFCSTYLE] for specific guidance
+about URIs in Internet-Drafts. Judgment can be used here; the stability
+of normative references is even more important than the stability of
+informative references.
 
 - [ ] Verify that references to other Internet-Drafts are formatted as shown
-      in [RFC7322]:
+      in [RFC7322].
+      
+For example:
 
-        Foo, "The Specific Subject", Work in Progress, 
-        Internet-Draft, draft-foo-bar-specific-subject-00, 
-        17 April 2021.
+    [RFCXXXX] Last name, First initial., Ed. (if applicable),
+    "RFC Title", Sub-series number (if applicable),
+    RFC number, Date of publication,
+    http://www.rfc-editor.org/info/rfc#.
 
-Note that normative references to I-Ds will cause the referencing document to
+Note that RFC 7322 is, at the time of publication of this guide, under
+revision and the format shown here is expected to change.
+
+Also note that normative references to I-Ds will cause the referencing document to
 wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs.
 They may in some cases become a cluster of documents [CLUSTER] that will be
 published as RFCs simultaneously.
@@ -550,16 +558,17 @@ published as RFCs simultaneously.
 - [ ] Verify that the I-D contains a section giving the name and contact
       information (postal mail, phone, and/or email) for the authors.
 
-          Note that if the I-D is eventually published as an RFC, this
-          information will not be changable. When possible provide
-          contact information that is expected to be stable over time.
+Note that if the I-D is eventually published as an RFC, this
+information will not be changable. When possible provide
+contact information that is expected to be stable over time.
 
 - [ ] Verify that there are no more than five authors or editors. If there
       is a need to list more, discuss the need with the relevant stream
       leadership as early in the process as possible. For the IETF stream,
       consult an Area Director.
 
-        Per [RFC 7322]:
+Per [RFC 7322]:
+
           The total number of authors or editors on the first page is generally
           limited to five individuals and their affiliations.  If there is a
           request for more than five authors, the stream-approving body needs
@@ -580,15 +589,15 @@ published as RFCs simultaneously.
 - [ ] Verify that the I-D neither states nor implies that it has any
       standards status.
 
-        To do so conflicts with the roles of the RFC Editor and the IESG. The
-        title of the document should not imply a status. Avoid the use of the
-        terms Standard, Proposed, Draft, Experimental, Historic, Required,
-        Recommended, Elective, or Restricted in the I-D title. An I-D may
-        indicate its intended status, if it were to be published as an RFC,
-        by setting the status attribute of the seriesInfo element (see [RFC
-        7991]) or by placing the words "Intended status: <status>" on the
-        left side of the headers in the first page if preparing a plain-text
-        submission.
+To do so conflicts with the roles of the RFC Editor and the IESG. The
+title of the document should not imply a status. Avoid the use of the
+terms Standard, Proposed, Draft, Experimental, Historic, Required,
+Recommended, Elective, or Restricted in the I-D title. An I-D may
+indicate its intended status, if it were to be published as an RFC,
+by setting the status attribute of the seriesInfo element (see [RFC
+7991]) or by placing the words "Intended status: <status>" on the
+left side of the headers in the first page if preparing a plain-text
+submission.
 
 #### Use of BCP 14 Terms
 
@@ -596,6 +605,12 @@ If [BCP 14] language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119,
 especially those in Sections 6 and 7, should be followed. "SHOULD" is
 especially problematic: it needs to be clear why SHOULD is used rather than
 MUST, and what the implications are of varying from the recommendation.
+
+#### Coding Languages
+
+When coding languages are used in Internet-Drafts, it is necessary to include
+as a reference the formal definition of that coding language (e.g., C87, C99,
+etc.).
 
 #### Formal Languages
 
@@ -643,12 +658,13 @@ an appropriate XML Schema, DTD, or another standard validation mechanism that
 is structurally and syntactically correct.
 
 Other guidelines for the use of XML in IETF protocols can be found in BCP 70
-[RFC 3470].
+[RFC 3470].  Internet-Drafts that include an XML Schema should include a normative
+reference to either [XMLSCHEMA11-1] or [XMLSCHEMA11-2].
 
 - [ ] Verify that any XML in the I-D is well-formed, and if it is intended to
       be valid, confirm that it validates against the appropriate definition.
 
-XML provides structures, such as the "<any>" element information item in XML
+XML provides structures, such as the "`<any>`" element information item in XML
 Schema, to allow element extensions.
 
 - [ ] Ensure the I-D contains clear guidance on how, when, and where any
@@ -658,30 +674,40 @@ Schema, to allow element extensions.
       Description Framework (RDF) Schemas are being registered with IANA using
       the procedures described in BCP 81 [RFC 3688].
 
+##### YANG
+ 
+YANG (Yet Another Next Generation) is a data modeling language for data
+sent over network management protocols such as NETCONF and RESTCONF.
+Specifications that present a YANG module should test, review, and format
+them using the tools and guidance presented at [YANG-TOOLS].
+ 
+Other useful references when considering inclusion of a YANG module
+include [RFC 8340], [RFC 8407], and [YANG-SEC].
+ 
 #### Example Addresses
 
 - [ ] Verify that examples use example FQDNs whenever possible.
 
-        Addresses used in examples should use fully qualified domain names
-        instead of literal IP addresses, and should use example FQDNs such as
-        "foo.example.com" instead of real-world FQDNs. See [RFC 2606] for
-        example domain names that can be used. Note that the entire
-        “.example” TLD is reserved, allowing for arbitrary subdomains (in
-        particular, ones that are not considered same-origin on the Web).
+Addresses used in examples should use fully qualified domain names
+instead of literal IP addresses, and should use example FQDNs such as
+"foo.example.com" instead of real-world FQDNs. See [RFC 2606] for
+example domain names that can be used. Note that the entire
+“.example” TLD is reserved, allowing for arbitrary subdomains (in
+particular, ones that are not considered same-origin on the Web).
 
 - [ ] Verify that literal IP addresses are from the example ranges.
 
-        There are also ranges of IP addresses set aside for this purpose. For
-        IPv4, these are defined in [RFC 6890]; for IPv6, see [RFC 3849]. Per
-        the IAB Statement on IPv6 [IAB-IPV6], IPv6 examples should be used.
+There are also ranges of IP addresses set aside for this purpose. For
+IPv4, these are defined in [RFC 6890]; for IPv6, see [RFC 3849]. Per
+the IAB Statement on IPv6 [IAB-IPV6], IPv6 examples should be used.
 
 - [ ] Verify that private addresses that would be used in the real world
       are not used in examples.
 
 - [ ] Verify that real telephone numbers are not used in examples.
 
-        Use those numbers that were reserved for examples or fictitious use.
-        Available numbers for use in examples are:
+Use those numbers that were reserved for examples or fictitious use.
+Available numbers for use in examples are:
 
           UK: +44-<geographic-area-code>-496-<0000-0999>
           USA: +1-<area code>-555-<0100-0199> (see
@@ -739,6 +765,11 @@ compiled a list of useful topics to consider [TOPICS].
       "stringprep" [RFC 8264] for more information on the recommended way
       of handling comparisons.
 
+#### Inclusive Language
+
+The IESG has made a statement recommending authors review [NISTIR 8366] for
+guidelines on using inclusive terminology.
+ 
 ## Format
 
 Formatting is automatically handled when Internet-Drafts are submitted in
@@ -777,7 +808,7 @@ overlooked:
       be numbered.
 
 - [ ] Verify that no text extends beyond the 72nd column of a line. This
-      limit is especially important for diagrams and code, which the RFC
+      limit is especially important for diagrams, which the RFC
       Editor may not be able to trivially reformat to fall within the
       margins.
 
@@ -836,6 +867,7 @@ overlooked:
 - [KRAMDOWN-RFC](https://github.com/cabo/kramdown-rfc2629)
 - [LIBSMI](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/)
 - [MIB-SEC](https://trac.ietf.org/trac/ops/wiki/mib-security)
+- [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
 - [REFERENCE](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/)
 - [REPOSITORY](https://www.ietf.org/id)
 - [RFC 2026](https://rfc-editor.org/info/rfc2026)
@@ -865,6 +897,7 @@ overlooked:
 - [RFC 8174](https://rfc-editor.org/info/rfc8174)
 - [RFC 8264](https://rfc-editor.org/info/rfc8264)
 - [RFC 8279](https://rfc-editor.org/info/rfc8279)
+- [RFC 8340](https://rfc-editor.org/info/rfc8340)
 - [RFCEDITOR-MEMOSTATUS](https://www.rfc-editor.org/materials/status-memos.txt)
 - [RFCEDITOR-V3FAQ](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html)
 - [RFCPUB](https://www.rfc-editor.org/pubprocess/)
@@ -874,7 +907,10 @@ overlooked:
 - [XML2RFC](https://pypi.org/project/xml2rfc/)
 - [XML2RFC-DOC](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html)
 - [XML2RFC-ONLINE](https://xml2rfc.tools.ietf.org/experimental.html)
+- [XMLSCHEMA11-1](https://www.w3.org/TR/xmlschema11-1/)
+- [XMLSCHEMA11-2](https://www.w3.org/TR/xmlschema11-2/)
 - [YANG-SEC](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
+- [YANG-TOOLS](https://trac.ietf.org/trac/ops/wiki/yang-review-tools)
 
 ## Acknowledgments
 
