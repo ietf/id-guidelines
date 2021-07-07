@@ -535,18 +535,8 @@ about URIs in Internet-Drafts. Judgment can be used here; the stability
 of normative references is even more important than the stability of
 informative references.
 
-- [ ] Verify that references to other Internet-Drafts are formatted as shown
-      in [RFC7322].
+
       
-For example:
-
-    [RFCXXXX] Last name, First initial., Ed. (if applicable),
-    "RFC Title", Sub-series number (if applicable),
-    RFC number, Date of publication,
-    http://www.rfc-editor.org/info/rfc#.
-
-Note that RFC 7322 is, at the time of publication of this guide, under
-revision and the format shown here is expected to change.
 
 Also note that normative references to I-Ds will cause the referencing document to
 wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs.
@@ -845,6 +835,11 @@ overlooked:
       that the sections are unnumbered and placed after the References section 
       and any appendices. See Section 4 of [RFC 7322].
 
+- [ ] Verify that references to other Internet-Drafts are formatted as shown
+      in [ID-REFS] and references to RFC are formatted as shown in [RFC-REFS].
+      Note that these formats can change over time, so review these links
+      carefully with each document submission.
+
 ## References
 
 - [ABBREV](https://www.rfc-editor.org/materials/abbrev.expansion.txt)
@@ -858,6 +853,7 @@ overlooked:
 - [HEADERS-AND-BOILERPLATE](https://www.iab.org/documents/headers-boilerplate/)
 - [IAB-IPV6](https://www.iab.org/2016/11/07/iab-statement-on-ipv6)
 - [IANA](https://www.iana.org/help/protocol-registration)
+- [ID-REFS](https://www.rfc-editor.org/styleguide/part2/#ref_ids)
 - [ID-REMOVAL](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/)
 - [IDNITS](https://tools.ietf.org/tools/idnits/)
 - [IDST](https://datatracker.ietf.org/submit)
@@ -901,6 +897,7 @@ overlooked:
 - [RFCEDITOR-MEMOSTATUS](https://www.rfc-editor.org/materials/status-memos.txt)
 - [RFCEDITOR-V3FAQ](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html)
 - [RFCPUB](https://www.rfc-editor.org/pubprocess/)
+- [RFC-REFS](https://www.rfc-editor.org/part2/#ref_rfcs)
 - [RFCSTYLE](https://www.rfc-editor.org/styleguide/)
 - [TLP](https://trustee.ietf.org/documents/trust-legal-provisions/)
 - [TOPICS](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics)
