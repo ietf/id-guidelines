@@ -18,9 +18,10 @@ Internet-Drafts (I-Ds) are the basic work items of the IETF. They are the
 primary inputs into what may eventually be published as a Request for Comment
 (RFC).
 
-Internet-Drafts are used by all of the RFC Streams. The guidance in this
-document applies to all streams unless it is identified as specific to a
-particular stream.
+Internet-Drafts are used by all of the [RFC
+Streams](https://rfc-editor.org/info/rfc8729). The guidance in this document
+applies to all streams unless it is identified as specific to a particular
+stream.
 
 Internet-Drafts are prepared by people acting in possibly several roles, such
 as an author or an editor. This guidance uses the term "author", but the
