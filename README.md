@@ -317,7 +317,7 @@ in [RFC 8174](https://rfc-editor.org/info/rfc8174).
 * [ ] If the I-D intends to obsolete or update existing RFCs, ensure there
       is a "Summary of Changes" section.
 
-#### IPR-Related Notices 
+#### IPR-Related Notices
 
 [BCP 78](https://www.rfc-editor.org/info/bcp78) and [BCP
 79](https://www.rfc-editor.org/info/bcp79) specify the IETF's Intellectual
@@ -746,7 +746,7 @@ Use those numbers that were reserved for examples or fictitious use.
 Available numbers for use in examples are:
 
           UK: +44-<geographic-area-code>-496-<0000-0999>
-          USA: +1-<area code>-555-<0100-0199> 
+          USA: +1-<area code>-555-<0100-0199>
 
 For USA examples, also see
 [ATIS-0300115](https://www.nationalnanpa.com/pdf/NRUF/ATIS-0300115.pdf).
