@@ -19,13 +19,13 @@ primary inputs into what may eventually be published as a Request for Comment
 (RFC).
 
 Internet-Drafts are used by all of the [RFC
-Streams](https://rfc-editor.org/info/rfc8729). The guidance in this document
-applies to all streams unless it is identified as specific to a particular
-stream.
+Streams](https://rfc-editor.org/info/rfc8729). Unless otherwise
+indicated, The guidance in this document
+applies to all streams.
 
 Internet-Drafts are prepared by people acting in possibly several roles, such
-as an author or an editor. This guidance uses the term "author", but the
-guidance applies to people acting in any role.
+as an author or an editor. This document uses the term "author", but the
+guidance here applies to people acting in any role.
 
 This document collects and summarizes requirements and guidance from
 many sources. The following resources should be consulted
@@ -52,7 +52,9 @@ attempting to construct a plaintext Internet-Draft manually, it is highly
 recommended using a structured language for authoring, and a toolchain like
 [xml2rfc](https://pypi.org/project/xml2rfc/) or
 [kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
-submission.
+submission. If you are maintaining your draft on GitHub, you will probably
+find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
+useful.
 
 An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
 documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
@@ -69,11 +71,9 @@ process](https://www.rfc-editor.org/pubprocess/).
 
 ## The Internet-Draft Repository
 
-All versions of Internet-Drafts are kept in the [Internet-Draft
-Archive](https://www.ietf.org/archive/id). Active versions of Internet-Drafts
+Active versions of Internet-Drafts
 are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
-
-Versions of Internet-Drafts are removed from the Repository when any of the
+Versions of Internet-Drafts are superceeded in the Repository when any of the
 following occur:
 
 * The I-D is updated with a new version.
@@ -87,9 +87,11 @@ being processed by the IESG for publication in the IETF stream, or being under
 review by the Independent Series Editor (ISE) for publication in the
 [Independent Submission Stream](https://www.rfc-editor.org/about/independent/).
 
+All versions of Internet-Drafts are kept in the [Internet-Draft
+Archive](https://www.ietf.org/archive/id).
 Internet-Drafts are not removed from the Archive when they are removed from the
 Repository. Removing an I-D from the Archive occurs only in exceptional
-circumstances, described in [this IESG
+circumstances, described in this [IESG
 Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
 
 Even though Internet-Drafts are kept in the Archive, they are not an archival
@@ -98,25 +100,28 @@ progress".
 
 ## Internet-Draft Names
 
-Internet-Draft names appear inside the I-D, and are used as components of
-filenames for the various formats the I-D may appear in. The characters
-that may appear in an I-D name are restricted:
+The characters that may appear in an I-D name is restricted:
 
 * [ ] Ensure that the I-D name consists only of
   * the lowercase letters `a-z`,
   * the digits `0-9`,
   * or hyphens (`-`).
 
-The name of an I-D consists of several components, separated by a hyphen.
-No empty components are allowed. That is, consecutive hyphens may not appear
-in an I-D name.
+Internet-Draft names have one of the following two formats:
+
+    draft-{SOURCE}-{WGNAME}-{SHORT-DOC-TITLE}-{VV}
+
+    draft-{AUTHOR-NAME}-{SHORT-DOC-TITLE}-{VV}
+
+All components are required, and are separate by a hyphen.
+Text in curly-braces, such as `{WGNAME}` represents an identifier.
 
 The first component identifies the I-D as a draft (as opposed to other
 document types, such as a charter or a review).
 
 * [ ] Verify that the I-D name begins with `draft-`.
 
-The second component identifies the source of an I-D. If an I-D has
+The second component, `{WGNAME}`, identifies the source of an I-D. If an I-D has
 been adopted into any stream other than the Independent Submission Stream,
 this component will identify the stream.
 
@@ -182,21 +187,22 @@ increment the version number by one.
 If the I-D is submitted as XML (which is highly recommended), the name and
 version of the document will be declared in the appropriate ["name" and
 "version" attributes](https://rfc-editor.org/info/rfc7991), and the filename
-submitted must be of the form `name-version.xml`.
+submitted have a single extension of `.xml`.
 
 If the I-D is submitted as plain text (which is not recommended), the name and
 version will appear on the document's first page, and the filename submitted
-must be of the form `name-version.txt`.
+must have a single extension of `.txt`.
 
-Convention dictates that an individual submission seeking adoption by a
+A popular convention is that
+an individual submission seeking adoption by a
 working group will include the working group's acronym just after the
-second component. For example, a person or group identified as "foo"
-seeking to get a document about "specific-subject" adopted by the "bar"
-working group might choose the name `draft-foo-bar-specific-subject`, and
-submit the file `draft-foo-bar-specific-subject-00.xml`. If the document is
+second component. For example, a person or group identified as "authors"
+seeking to get a document about "specific-subject" adopted by the "wgname"
+working group might choose the name `draft-authors-wgname-specific-subject`, and
+submit the file `draft-authors-wgname-specific-subject-00.xml`. If the document is
 later adopted by the working group, the authors will usually create a new
-I-D named `draft-ietf-bar-specific-subject` and submit it as
-`draft-ietf-bar-specific-subject-00.xml`. Note that the version number of
+I-D named `draft-ietf-wgname-specific-subject` and submit it as
+`draft-ietf-wgname-specific-subject-00.xml`. Note that the version number of
 this new I-D will always be `00`.
 
 ## The Submission Process
