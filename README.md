@@ -20,7 +20,7 @@ primary inputs into what may eventually be published as a Request for Comment
 
 Internet-Drafts are used by all of the [RFC
 Streams](https://rfc-editor.org/info/rfc8729). Unless otherwise
-indicated, The guidance in this document
+indicated, the guidance in this document
 applies to all streams.
 
 Internet-Drafts are prepared by people acting in possibly several roles, such
@@ -73,7 +73,7 @@ process](https://www.rfc-editor.org/pubprocess/).
 
 Active versions of Internet-Drafts
 are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
-Versions of Internet-Drafts are superceeded in the Repository when any of the
+Versions of Internet-Drafts are superseded in the Repository when any of the
 following occur:
 
 * The I-D is updated with a new version.
@@ -89,8 +89,8 @@ review by the Independent Series Editor (ISE) for publication in the
 
 All versions of Internet-Drafts are kept in the [Internet-Draft
 Archive](https://www.ietf.org/archive/id).
-Internet-Drafts are not removed from the Archive when they are removed from the
-Repository. Removing an I-D from the Archive occurs only in exceptional
+Internet-Drafts are not removed from the Archive when they are superseded in
+the Repository. Removing an I-D from the Archive occurs only in exceptional
 circumstances, described in this [IESG
 Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
 
@@ -100,7 +100,7 @@ progress".
 
 ## Internet-Draft Names
 
-The characters that may appear in an I-D name is restricted:
+The characters that may appear in an I-D name are restricted:
 
 * [ ] Ensure that the I-D name consists only of
   * the lowercase letters `a-z`,
