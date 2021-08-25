@@ -201,22 +201,28 @@ this new I-D will always be `00`.
 ## The Submission Process
 
 Internet-Draft submissions are made using the [IETF Datatracker's submission
-tool](https://datatracker.ietf.org/submit). An I-D submission should preferably
+tool](https://datatracker.ietf.org/submit). An I-D submission should
 be an [xml2rfc version 3](https://rfc-editor.org/info/rfc7991) XML source file,
 but a [version 2 source](https://rfc-editor.org/info/rfc7749) will be accepted.
-If an XML source is not available, a plaintext submission will be accepted.
-
-Currently, the submission tool will accept both an XML and plaintext
-submission, as well as PDF and PostScript versions of the document. In such
-submissions, the XML is authoritative, if present, otherwise the plain text is
-authoritative. It is expected that the tool will change to allow only the
-submission of XML or plain text, but not both, and to not accept other formats.
-
-**In short: submit XML if at all possible, with v3 preferred over v2.**
+If an XML file is submitted, this is taken as the authoritative version of the
+document.
 
 If XML source is submitted, the Datatracker will generate a plain text version
 of the I-D and place it in the Archive. If v3 source is submitted, the
 Datatracker will also generate an HTML version and place it in the Archive.
+
+If an XML submission is not possible, the draft can be submitted as
+plaintext and will be taken as the authoritive version. If XML is
+submittted, a plaintext version can also be submitted as an "alternate
+form" of the draft.
+
+In addition, it is currently possible to submit PDF and/or PostScript
+versions of the document. They are kept with the authoritative document
+source in the repository and archive. It is expected that supoprt for
+PDF and PostScript will be removed at some point, and further that
+only XML or plaintext (not both) will be allowed.
+
+**In short: submit XML if at all possible, with v3 preferred over v2.**
 
 When a submission is made through the submission tool, the authors will
 receive email with a request to verify the submission. The submission will
