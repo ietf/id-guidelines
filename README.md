@@ -158,7 +158,8 @@ rejected or replaced.
 
 If the I-D is targeted at or has been adopted by a group, the group's acronym
 should be added to the name just after the second component, separated by a
-hyphen.
+hyphen.  A list of active IETF working groups can be found
+[here](https://datatracker.ietf.org/wg/).
 
 * [ ] Ensure an adopted or group-targeted I-D identifies the group just after
   the second component by including the group's acronym.
