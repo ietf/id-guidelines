@@ -12,7 +12,7 @@
 * [Format](#format)
 * [Acknowledgement](#acknowledgement)
 
-## Introduction
+## Introducing Internet-Drafts
 
 Internet-Drafts (I-Ds) are the basic work items of the IETF. They are the
 primary inputs into what may eventually be published as a Request for Comment
@@ -67,7 +67,7 @@ As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
 
-## Background
+## The Internet-Draft Repository
 
 All versions of Internet-Drafts are kept in the [Internet-Draft
 Archive](https://www.ietf.org/archive/id). Active versions of Internet-Drafts
