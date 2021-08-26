@@ -434,7 +434,7 @@ An abstract should be complete in itself, so it should not contain citations
 unless they are completely defined within the abstract. Abbreviations appearing
 in the abstract should generally be expanded in parentheses. There is a set of
 reasonable exceptions to this rule; for example, readers don't need to be
-reminded of what "IP" or "TCP" or "MIB" means. The RFC Editor maintains a [list
+reminded of what "IP" or "TCP" or "HTTP" means. The RFC Editor maintains a [list
 of approved
 abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt) that
 do not need to be expanded. In the end, this is a judgment call, but
