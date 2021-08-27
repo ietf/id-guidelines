@@ -179,7 +179,7 @@ hyphen. The initial version of an I-D must be `00`, and subsequent updates must
 increment the version number by one.
 
 If the I-D is submitted as XML (which is highly recommended), the name and
-version of the document will be declared in a ["seriesInfo"
+version of the document will be declared in the "value" attribute of a ["seriesInfo"
 element](https://www.rfc-editor.org/rfc/rfc7991.html#section-2.47). The filename
 submitted must have a `.xml` extension.
 
