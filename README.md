@@ -799,9 +799,9 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 
 * [ ] Ensure the I-D does not introduce congestion issues. No application can be
   permitted to cause catastrophic congestion. See [RFC
-  2914](https://rfc-editor.org/info/rfc2914) for details. Applications using TCP
-  or SCTP will normally fulfill this requirement automatically. Applications
-  using UDP should adhere to the guidance in [RFC
+  2914](https://rfc-editor.org/info/rfc2914) for details. Applications using TCP,
+  SCTP, DCCP, or QUIC will normally fulfill this requirement automatically.
+  Other applications using UDP should adhere to the guidance in [RFC
   8085](https://rfc-editor.org/info/rfc8085).
 
 * [ ] Verify that any sort of end-to-end checksum or integrity check being used
