@@ -19,13 +19,13 @@ primary inputs into what may eventually be published as a Request for Comment
 (RFC).
 
 Internet-Drafts are used by all of the [RFC
-Streams](https://rfc-editor.org/info/rfc8729). The guidance in this document
-applies to all streams unless it is identified as specific to a particular
-stream.
+Streams](https://rfc-editor.org/info/rfc8729). Unless otherwise
+indicated, the guidance in this document
+applies to all streams.
 
 Internet-Drafts are prepared by people acting in possibly several roles, such
-as an author or an editor. This guidance uses the term "author", but the
-guidance applies to people acting in any role.
+as an author or an editor. This document uses the term "author", but the
+guidance here applies to people acting in any role.
 
 This document collects and summarizes requirements and guidance from
 many sources. The following resources should be consulted
@@ -52,7 +52,9 @@ attempting to construct a plaintext Internet-Draft manually, it is highly
 recommended using a structured language for authoring, and a toolchain like
 [xml2rfc](https://pypi.org/project/xml2rfc/) or
 [kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
-submission.
+submission. If you are maintaining your draft on GitHub, you will probably
+find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
+useful.
 
 An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
 documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
@@ -69,11 +71,9 @@ process](https://www.rfc-editor.org/pubprocess/).
 
 ## The Internet-Draft Repository
 
-All versions of Internet-Drafts are kept in the [Internet-Draft
-Archive](https://www.ietf.org/archive/id). Active versions of Internet-Drafts
+Active versions of Internet-Drafts
 are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
-
-Versions of Internet-Drafts are removed from the Repository when any of the
+Versions of Internet-Drafts are superseded in the Repository when any of the
 following occur:
 
 * The I-D is updated with a new version.
@@ -87,9 +87,11 @@ being processed by the IESG for publication in the IETF stream, or being under
 review by the Independent Series Editor (ISE) for publication in the
 [Independent Submission Stream](https://www.rfc-editor.org/about/independent/).
 
-Internet-Drafts are not removed from the Archive when they are removed from the
-Repository. Removing an I-D from the Archive occurs only in exceptional
-circumstances, described in [this IESG
+All versions of Internet-Drafts are kept in the [Internet-Draft
+Archive](https://www.ietf.org/archive/id).
+Internet-Drafts are not removed from the Archive when they are superseded in
+the Repository. Removing an I-D from the Archive occurs only in exceptional
+circumstances, described in this [IESG
 Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
 
 Even though Internet-Drafts are kept in the Archive, they are not an archival
@@ -98,30 +100,36 @@ progress".
 
 ## Internet-Draft Names
 
-Internet-Draft names appear inside the I-D, and are used as components of
-filenames for the various formats the I-D may appear in. The characters
-that may appear in an I-D name are restricted:
+The characters that may appear in an I-D name are restricted:
 
 * [ ] Ensure that the I-D name consists only of
   * the lowercase letters `a-z`,
   * the digits `0-9`,
   * or hyphens (`-`).
 
-The name of an I-D consists of several components, separated by a hyphen.
-No empty components are allowed. That is, consecutive hyphens may not appear
-in an I-D name.
+Internet-Draft names have one of the following two formats:
 
-The first component identifies the I-D as a draft (as opposed to other
+    draft-{SOURCE}-{WGNAME}-{SHORT-DOC-TITLE}-{VV}
+
+    draft-{AUTHOR-NAME}-{SHORT-DOC-TITLE}-{VV}
+
+All components are required, and are separate by a hyphen.
+Text in curly-braces, such as `{WGNAME}` represents an identifier.
+
+The first component, `draft-`,  identifies the I-D as a draft (as
+opposed to other
 document types, such as a charter or a review).
 
 * [ ] Verify that the I-D name begins with `draft-`.
 
-The second component identifies the source of an I-D. If an I-D has
+The second component, `{SOURCE}`, identifies the source of an I-D. If an I-D has
 been adopted into any stream other than the Independent Submission Stream,
-this component will identify the stream.
+this component will identify the stream, as listed below.
 
 If the I-D has not been adopted into any stream or if it is being considered for
-publication in the Independent Submission Stream, the second component should
+publication in the Independent Submission Stream, the second
+format above should be used. In this, the second component, `{AUTHOR-NAME}`,
+should
 consist of a string related to the names(s) of the author(s). There are no
 mechanical rules for this string beyond consisting only of the allowed
 characters. However, objectionable or misleading strings are subject to change
@@ -142,15 +150,14 @@ such as hyphenated last names are allowed. Having a hyphen in the second
 component makes it hard to extract programmatically. This forces many tools
 to use heuristics when tying to locate the second component.
 
-* [ ] Ensure the second component reasonably identifies the source of the I-D.
+* [ ] Ensure the second component reasonably identifies the source of the I-D
+  and that it is not a group acronym or a reserved string, is not
+  objectionable, and does not otherwise introduce confusion.
 
 * [ ] If the I-D has been adopted by a stream, ensure the second component is:
   * `ietf` for the IETF stream
   * `irtf` for the IRTF stream
   * `iab` for the IAB stream
-
-Otherwise, ensure that the second component is not a group acronym or a
-reserved string, is not objectionable, and does not introduce confusion.
 
 Note that any I-D submitted with one of these stream identifiers in the second
 component that has not been adopted by the indicated stream will either be
@@ -167,7 +174,7 @@ hyphen.  A list of active IETF working groups can be found
 Note again that if the I-D has not been adopted into a stream, and it identifies
 a stream in the second component, it will be rejected or replaced. In particular
 for IETF stream documents, the first version of an I-D with a name that begins
-with `draft-ietf-acronym-` for any working group acronym must be approved by the
+with `draft-ietf-wgname-` for any working group name must be approved by the
 working group's chairs before it will be posted.
 
 The remainder of the name describes the purpose of the I-D, usually in just a
@@ -188,16 +195,18 @@ If the I-D is submitted as plain text (which is not recommended), the name and
 version will appear on the document's first page, and the filename submitted
 must must have a `.txt` extension.
 
-Convention dictates that an individual submission seeking adoption by a
+A popular convention is that
+an individual submission seeking adoption by a
 working group will include the working group's acronym just after the
-second component. For example, a person or group identified as "foo"
-seeking to get a document about "specific-subject" adopted by the "bar"
-working group might choose the name `draft-foo-bar-specific-subject`, and
-submit the file `draft-foo-bar-specific-subject-00.xml`. If the document is
+second component. For example, a person or group identified as "authors"
+seeking to get a document about "specific-subject" adopted by the "wgname"
+working group might choose the name `draft-authors-wgname-specific-subject`, and
+submit the file `draft-authors-wgname-specific-subject-00.xml`. If the document is
 later adopted by the working group, the authors will usually create a new
-I-D named `draft-ietf-bar-specific-subject` and submit it as
-`draft-ietf-bar-specific-subject-00.xml`. Note that the version number of
-this new I-D will always be `00`.
+I-D named `draft-ietf-wgname-specific-subject` and submit it as
+`draft-ietf-wgname-specific-subject-00.xml`. Note that the version number of
+this new I-D will always be `00`, no matter how many versions of the
+individual draft were posted before adoption.
 
 ## The Submission Process
 
