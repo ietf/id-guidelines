@@ -263,9 +263,9 @@ post the submission take time.
 
 ## Content
 
-Internet-Drafts and RFCs have certain required content. I-Ds should take the
-accrued knowledge on frequent and particularly important topics into
-consideration as early in their life cycle as possible.
+Internet-Drafts and RFCs have certain required content, and a number of
+additional considerations should be taken into consideration when authoring
+them.
 
 ### Required Content
 
