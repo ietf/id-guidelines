@@ -73,7 +73,7 @@ process](https://www.rfc-editor.org/pubprocess/).
 
 Active versions of Internet-Drafts
 are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
-Versions of Internet-Drafts are superseded in the Repository when any of the
+Versions of Internet-Drafts are removed from the Repository when any of the
 following occur:
 
 * The I-D is updated with a new version.
@@ -89,7 +89,7 @@ review by the Independent Series Editor (ISE) for publication in the
 
 All versions of Internet-Drafts are kept in the [Internet-Draft
 Archive](https://www.ietf.org/archive/id).
-Internet-Drafts are not removed from the Archive when they are superseded in
+Internet-Drafts are not removed from the Archive when they are removed from
 the Repository. Removing an I-D from the Archive occurs only in exceptional
 circumstances, described in this [IESG
 Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
