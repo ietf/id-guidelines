@@ -500,7 +500,10 @@ Some other references that may be useful when crafting this section are:
 
 #### IANA Considerations
 
-This section must be present to enumerate any actions IANA must take upon
+IANA is the [Internet Assigned Numbers Authority](https://www.iana.org/) and
+provides global coordination of the DNS root, IP addressing, and many other
+Internet protocol resources for the IETF. The "IANA Considerations" section must
+be present in a document and enumerate any actions IANA must take upon
 publication of the document as an RFC.
 
 * [ ] Verify this section contains clear instructions if IANA is expected
