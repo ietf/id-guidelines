@@ -2,10 +2,11 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [Background](#background)
+* [Introducing Internet-Drafts](#introducing-internet-drafts)
+* [The Internet-Draft Repository](#the-internet-draft-repository)
 * [Internet-Draft Names](#internet-draft-names)
 * [The Submission Process](#the-submission-process)
+  * [Manual Submissions](#manual-submissions)
 * [Content](#content)
   * [Required Content](#required-content)
   * [Content Considerations](#content-considerations)
