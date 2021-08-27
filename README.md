@@ -47,27 +47,13 @@ inspected, or checked, to see whether changes should be made before submitting
 an I-D. These items are marked with checkboxes ([ ]). However, authors are
 expected to be familiar with and to apply the full guidance in this document.
 
-There are tools to help with the creation of Internet-Drafts. Rather than
-attempting to construct a plaintext Internet-Draft manually, it is highly
-recommended using a structured language for authoring, and a toolchain like
-[xml2rfc](https://pypi.org/project/xml2rfc/) or
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
-submission. If you are maintaining your draft on GitHub, you will probably
-find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
-useful.
-
-An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
-documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) input formats is
-available. Authors working with the xml2rfc XML source format should be familiar
-with [the XML grammar](https://rfc-editor.org/info/rfc7991) [that the xml2rfc
-tool currently accepts](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html), and
-the [RFC Editor's FAQ on using the v3 XML
-format](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html).
-
 As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
+
+I-Ds are typically authored in a structured language such as Markdown or XML,
+which various [tools](#format) will convert to HTML, plaintext and other
+representations.
 
 ## The Internet-Draft Repository
 
@@ -830,6 +816,24 @@ recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
 for guidelines on using inclusive terminology.
 
 ## Format
+
+There are tools to help with the creation of Internet-Drafts. Rather than
+attempting to construct a plaintext Internet-Draft manually, it is highly
+recommended using a structured language for authoring, and a toolchain like
+[xml2rfc](https://pypi.org/project/xml2rfc/) or
+[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
+submission. If you are maintaining your draft on GitHub, you will probably
+find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
+useful.
+
+An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
+documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
+[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) input formats is
+available. Authors working with the xml2rfc XML source format should be familiar
+with [the XML grammar](https://rfc-editor.org/info/rfc7991) [that the xml2rfc
+tool currently accepts](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html), and
+the [RFC Editor's FAQ on using the v3 XML
+format](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html).
 
 Formatting is automatically handled when Internet-Drafts are submitted in
 XML form. Authors of such I-Ds have very few formatting issues to consider.
