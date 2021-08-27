@@ -242,6 +242,21 @@ I-Ds entering Working Group Last Call. I-Ds will progress through the review
 and publication process more efficiently the earlier the guidance is followed
 in the I-D.
 
+### Submission Deadlines
+
+Be aware of the deadlines for submitting I-Ds before each IETF meeting. The
+[important dates page](https://datatracker.ietf.org/meeting/important-dates)
+will show the deadline for submitting I-Ds. Some meetings may have an earlier
+deadline for initial versions of I-Ds than for updates to existing I-Ds.
+
+After the deadlines, submissions will not be accepted until the meeting begins.
+The leadership responsible for each stream can override this submission blackout
+period when appropriate.
+
+Care should be taken when submitting an I-D near the deadline, especially if a
+manual post is requested. The steps to confirm and post the submission take
+time.
+
 ### Manual Submissions
 
 If authors are unable to submit an I-D through the Datatracker, they may make a
@@ -251,15 +266,6 @@ I-D. The I-D must be a standalone document in either XML or plaintext format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
 
-Be aware of the deadlines for submitting I-Ds before each IETF Meeting. The
-[important dates page](https://datatracker.ietf.org/meeting/important-dates)
-will show the deadline for submitting I-Ds. Some meetings may have an earlier
-deadline for initial versions of I-Ds than for updates to existing I-Ds. After
-the deadlines, submissions will not be accepted until the meeting begins. The
-leadership responsible for each stream can override this submission blackout
-period when appropriate. Care should be taken when submitting an I-D near the
-deadline, especially if a manual post is requested. The steps to confirm and
-post the submission take time.
 
 ## Content
 
