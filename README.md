@@ -837,7 +837,9 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 The IESG has made a
 [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/)
 recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
-for guidelines on using inclusive terminology.
+for guidelines on using inclusive terminology. Similar guidance pointing to [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) exists for other
+RFC Streams. Authors are encouraged to familiarize themselves with and apply the
+guidance.
 
 ## Format
 
