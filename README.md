@@ -3,15 +3,16 @@
 ## Table of Contents
 
 * [Introducing Internet-Drafts](#introducing-internet-drafts)
-* [The Internet-Draft Repository](#the-internet-draft-repository)
 * [Internet-Draft Names](#internet-draft-names)
 * [The Submission Process](#the-submission-process)
+  * [Submission Deadlines](#submission-deadlines)
   * [Manual Submissions](#manual-submissions)
+* [After Submission](#after-submission)
 * [Content](#content)
   * [Required Content](#required-content)
   * [Content Considerations](#content-considerations)
 * [Format](#format)
-* [Acknowledgement](#acknowledgement)
+* [Acknowledgements](#acknowledgements)
 
 ## Introducing Internet-Drafts
 
@@ -931,7 +932,9 @@ overlooked:
   RFCs). Note that these formats can change over time, so review these links
   carefully with each document submission.
 
-## Acknowledgement
+## Acknowledgements
 
 This document is based heavily on the work of Russ Housley, Ben Kaduk,
 Murray Kucherawy, Alvaro Retana, and the members of many IESGs.
+
+The IETF commumity also provided valuable feedback.
