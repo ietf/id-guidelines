@@ -2,10 +2,11 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [Background](#background)
+* [Introducing Internet-Drafts](#introducing-internet-drafts)
+* [The Internet-Draft Repository](#the-internet-draft-repository)
 * [Internet-Draft Names](#internet-draft-names)
 * [The Submission Process](#the-submission-process)
+  * [Manual Submissions](#manual-submissions)
 * [Content](#content)
   * [Required Content](#required-content)
   * [Content Considerations](#content-considerations)
@@ -47,27 +48,10 @@ inspected, or checked, to see whether changes should be made before submitting
 an I-D. These items are marked with checkboxes ([ ]). However, authors are
 expected to be familiar with and to apply the full guidance in this document.
 
-There are tools to help with the creation of Internet-Drafts. Rather than
-attempting to construct a plaintext Internet-Draft manually, it is highly
-recommended using a structured language for authoring, and a toolchain like
-[xml2rfc](https://pypi.org/project/xml2rfc/) or
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
-submission. If you are maintaining your draft on GitHub, you will probably
-find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
-useful.
-
-An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
-documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) input formats is
-available. Authors working with the xml2rfc XML source format should be familiar
-with [the XML grammar](https://rfc-editor.org/info/rfc7991) [that the xml2rfc
-tool currently accepts](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html), and
-the [RFC Editor's FAQ on using the v3 XML
-format](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html).
-
 As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
+
 
 ## Internet-Draft Names
 
@@ -229,6 +213,21 @@ I-Ds entering Working Group Last Call. I-Ds will progress through the review
 and publication process more efficiently the earlier the guidance is followed
 in the I-D.
 
+### Submission Deadlines
+
+Be aware of the deadlines for submitting I-Ds before each IETF meeting. The
+[important dates page](https://datatracker.ietf.org/meeting/important-dates)
+will show the deadline for submitting I-Ds. Some meetings may have an earlier
+deadline for initial versions of I-Ds than for updates to existing I-Ds.
+
+After the deadlines, submissions will not be accepted until the meeting begins.
+The leadership responsible for each stream can override this submission blackout
+period when appropriate.
+
+Care should be taken when submitting an I-D near the deadline, especially if a
+manual post is requested. The steps to confirm and post the submission take
+time.
+
 ### Manual Submissions
 
 If authors are unable to submit an I-D through the Datatracker, they may make a
@@ -238,15 +237,6 @@ I-D. The I-D must be a standalone document in either XML or plaintext format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
 
-Be aware of the deadlines for submitting I-Ds before each IETF Meeting. The
-[important dates page](https://datatracker.ietf.org/meeting/important-dates)
-will show the deadline for submitting I-Ds. Some meetings may have an earlier
-deadline for initial versions of I-Ds than for updates to existing I-Ds. After
-the deadlines, submissions will not be accepted until the meeting begins. The
-leadership responsible for each stream can override this submission blackout
-period when appropriate. Care should be taken when submitting an I-D near the
-deadline, especially if a manual post is requested. The steps to confirm and
-post the submission take time.
 
 ## After Submission
 
@@ -279,9 +269,9 @@ progress".
 
 ## Content
 
-Internet-Drafts and RFCs have certain required content. I-Ds should take the
-accrued knowledge on frequent and particularly important topics into
-consideration as early in their life cycle as possible.
+Internet-Drafts and RFCs have certain required content, and a number of
+additional considerations should be taken into consideration when authoring
+them.
 
 ### Required Content
 
@@ -441,7 +431,7 @@ introduction section, but a good abstract will be shorter, less detailed, and
 broader in scope than the introduction. Simply copying and pasting the first
 few paragraphs of the introduction is tempting, but it generally results in an
 abstract that is both incomplete and redundant. An abstract will typically be
-five to ten lines. An abstract of more than 20 lines or fewer than three lines
+around 50-150 words in length. An abstract that is much shorter or longer
 is generally not acceptable.
 
 * [ ] Ensure the Internet-Draft contains an appropriate abstract.
@@ -499,7 +489,10 @@ Some other references that may be useful when crafting this section are:
 
 #### IANA Considerations
 
-This section must be present to enumerate any actions IANA must take upon
+IANA is the [Internet Assigned Numbers Authority](https://www.iana.org/) and
+provides global coordination of the DNS root, IP addressing, and many other
+Internet protocol resources for the IETF. The "IANA Considerations" section must
+be present in a document and enumerate any actions IANA must take upon
 publication of the document as an RFC.
 
 * [ ] Verify this section contains clear instructions if IANA is expected
@@ -798,9 +791,9 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 
 * [ ] Ensure the I-D does not introduce congestion issues. No application can be
   permitted to cause catastrophic congestion. See [RFC
-  2914](https://rfc-editor.org/info/rfc2914) for details. Applications using TCP
-  or SCTP will normally fulfill this requirement automatically. Applications
-  using UDP should adhere to the guidance in [RFC
+  2914](https://rfc-editor.org/info/rfc2914) for details. Applications using TCP,
+  SCTP, DCCP, or QUIC will normally fulfill this requirement automatically.
+  Other applications using UDP should adhere to the guidance in [RFC
   8085](https://rfc-editor.org/info/rfc8085).
 
 * [ ] Verify that any sort of end-to-end checksum or integrity check being used
@@ -827,9 +820,29 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 The IESG has made a
 [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/)
 recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
-for guidelines on using inclusive terminology.
+for guidelines on using inclusive terminology. Similar guidance pointing to [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) exists for other
+RFC Streams. Authors are encouraged to familiarize themselves with and apply the
+guidance.
 
 ## Format
+
+There are tools to help with the creation of Internet-Drafts. Rather than
+attempting to construct a plaintext Internet-Draft manually, it is highly
+recommended using a structured language for authoring, and a toolchain like
+[xml2rfc](https://pypi.org/project/xml2rfc/) or
+[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
+submission. If you are maintaining your draft on GitHub, you will probably
+find [Martin Thomson's tools](https://github.com/martinthomson/i-d-template)
+useful.
+
+An [online converter](https://xml2rfc.tools.ietf.org/experimental.html) for
+documents in the [xml2rfc](https://pypi.org/project/xml2rfc/) or
+[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) input formats is
+available. Authors working with the xml2rfc XML source format should be familiar
+with [the XML grammar](https://rfc-editor.org/info/rfc7991) [that the xml2rfc
+tool currently accepts](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html), and
+the [RFC Editor's FAQ on using the v3 XML
+format](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html).
 
 Formatting is automatically handled when Internet-Drafts are submitted in
 XML form. Authors of such I-Ds have very few formatting issues to consider.
