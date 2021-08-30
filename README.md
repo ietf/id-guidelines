@@ -52,38 +52,6 @@ As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
 
-I-Ds are typically authored in a structured language such as Markdown or XML,
-which various [tools](#format) will convert to HTML, plaintext and other
-representations.
-
-## The Internet-Draft Repository
-
-Active versions of Internet-Drafts
-are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
-Versions of Internet-Drafts are removed from the Repository when any of the
-following occur:
-
-* The I-D is updated with a new version.
-* The I-D is replaced by another Internet-Draft.
-* The I-D is published as an RFC.
-* The I-D expires.
-
-An I-D expires 185 days after it was placed in the Repository, unless it
-is in a state that prevents it from expiring. Examples of such states include
-being processed by the IESG for publication in the IETF stream, or being under
-review by the Independent Series Editor (ISE) for publication in the
-[Independent Submission Stream](https://www.rfc-editor.org/about/independent/).
-
-All versions of Internet-Drafts are kept in the [Internet-Draft
-Archive](https://www.ietf.org/archive/id).
-Internet-Drafts are not removed from the Archive when they are removed from
-the Repository. Removing an I-D from the Archive occurs only in exceptional
-circumstances, described in this [IESG
-Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
-
-Even though Internet-Drafts are kept in the Archive, they are not an archival
-series and should not be cited or quoted as anything other than "work in
-progress".
 
 ## Internet-Draft Names
 
@@ -269,6 +237,35 @@ I-D. The I-D must be a standalone document in either XML or plaintext format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
 
+
+## After Submission
+
+Active versions of Internet-Drafts
+are also placed in the [Internet-Draft Repository](https://www.ietf.org/id).
+Versions of Internet-Drafts are superseded in the Repository when any of the
+following occur:
+
+* The I-D is updated with a new version.
+* The I-D is replaced by another Internet-Draft.
+* The I-D is published as an RFC.
+* The I-D expires.
+
+An I-D expires 185 days after it was placed in the Repository, unless it
+is in a state that prevents it from expiring. Examples of such states include
+being processed by the IESG for publication in the IETF stream, or being under
+review by the Independent Series Editor (ISE) for publication in the
+[Independent Submission Stream](https://www.rfc-editor.org/about/independent/).
+
+All versions of Internet-Drafts are kept in the [Internet-Draft
+Archive](https://www.ietf.org/archive/id).
+Internet-Drafts are not removed from the Archive when they are superseded in
+the Repository. Removing an I-D from the Archive occurs only in exceptional
+circumstances, described in this [IESG
+Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
+
+Even though Internet-Drafts are kept in the Archive, they are not an archival
+series and should not be cited or quoted as anything other than "work in
+progress".
 
 ## Content
 
