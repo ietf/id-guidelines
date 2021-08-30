@@ -442,7 +442,7 @@ introduction section, but a good abstract will be shorter, less detailed, and
 broader in scope than the introduction. Simply copying and pasting the first
 few paragraphs of the introduction is tempting, but it generally results in an
 abstract that is both incomplete and redundant. An abstract will typically be
-five to ten lines. An abstract of more than 20 lines or fewer than three lines
+around 50-150 words in length. An abstract that is much shorter or longer
 is generally not acceptable.
 
 * [ ] Ensure the Internet-Draft contains an appropriate abstract.
