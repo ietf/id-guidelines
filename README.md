@@ -475,6 +475,7 @@ can claim no added security risk.
 
 Some other references that may be useful when crafting this section are:
 
+* [Pervasive Monitoring Is an Attack](https://rfc-editor.org/info/rfc7258)
 * [Internet Security Glossary, Version 2](https://rfc-editor.org/info/rfc4949)
 * [Guidelines for Specifying the Use of IPsec Version
   2](https://rfc-editor.org/info/rfc5406)
