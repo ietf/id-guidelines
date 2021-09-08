@@ -164,6 +164,13 @@ I-D named `draft-ietf-wgname-specific-subject` and submit it as
 this new I-D will always be `00`, no matter how many versions of the
 individual draft were posted before adoption.
 
+In addtion, [The Tao of the IETF](https://www.ietf.org/about/participate/tao/)
+(which is well worth reading!) notes that:
+> There are some informal rules for Internet-Draft naming that have
+  evolved over the years. Internet-Drafts that revise existing RFCs
+  often have draft names with "bis" in them, meaning "again" or "twice";
+  for example, a draft might be called "draft-someone-rfc2345bis-00.txt".
+
 ## The Submission Process
 
 Internet-Draft submissions are made using the [IETF Datatracker's submission
