@@ -24,7 +24,7 @@ Streams](https://rfc-editor.org/info/rfc8729). Unless otherwise
 indicated, the guidance in this document applies to all streams.
 
 Internet-Drafts are prepared by people acting in possibly several roles,
-such as an author or an editor. This document uses the term “author”,
+such as an author or an editor. This document uses the term "author",
 but the guidance here applies to people acting in any role.
 
 This document collects and summarizes requirements and guidance from
@@ -39,7 +39,7 @@ details:
     79](https://www.rfc-editor.org/info/bcp79).
 -   The IETF [Trust Legal Provisions Relating to IETF
     Documents](https://trustee.ietf.org/documents/trust-legal-provisions/),
-    called “the TLP” for short, provides many details about copyright
+    called "the TLP" for short, provides many details about copyright
     policy and practice.
 
 Much of the guidance in this document is in the form of something that
@@ -54,7 +54,7 @@ highly recommended using a structured language for authoring, and a
 toolchain like [xml2rfc](https://pypi.org/project/xml2rfc/) or
 [kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) to build a
 submission. If you are maintaining your draft on GitHub, you will
-probably find [Martin Thomson’s
+probably find [Martin Thomson's
 tools](https://github.com/martinthomson/i-d-template) useful.
 
 An [online converter](https://xml2rfc.tools.ietf.org/experimental.html)
@@ -64,11 +64,11 @@ formats is available. Authors working with the xml2rfc XML source format
 should be familiar with [the XML
 grammar](https://rfc-editor.org/info/rfc7991) [that the xml2rfc tool
 currently accepts](https://xml2rfc.tools.ietf.org/xml2rfc-doc.html), and
-the [RFC Editor’s FAQ on using the v3 XML
+the [RFC Editor's FAQ on using the v3 XML
 format](https://www.rfc-editor.org/materials/FAQ-xml2rfcv3.html).
 
 As Internet-Drafts may be eventually published as RFCs, it is
-recommended to consult the [RFC Editor’s publication
+recommended to consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
 
 ## The Internet-Draft Repository
@@ -99,7 +99,7 @@ Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-remo
 
 Even though Internet-Drafts are kept in the Archive, they are not an
 archival series and should not be cited or quoted as anything other than
-“work in progress”.
+"work in progress".
 
 ## Internet-Draft Names
 
@@ -168,19 +168,19 @@ Note that any I-D submitted with one of these stream identifiers in the
 second component that has not been adopted by the indicated stream will
 either be rejected or replaced.
 
-If the I-D is targeted at or has been adopted by a group, the group’s
+If the I-D is targeted at or has been adopted by a group, the group's
 acronym should be added to the name just after the second component,
 separated by a hyphen. A list of active IETF working groups can be found
 [here](https://datatracker.ietf.org/wg/).
 
 -   [ ] Ensure an adopted or group-targeted I-D identifies the group
-    just after the second component by including the group’s acronym.
+    just after the second component by including the group's acronym.
 
 Note again that if the I-D has not been adopted into a stream, and it
 identifies a stream in the second component, it will be rejected or
 replaced. In particular for IETF stream documents, the first version of
 an I-D with a name that begins with `draft-ietf-wgname-` for any working
-group name must be approved by the working group’s chairs before it will
+group name must be approved by the working group's chairs before it will
 be posted.
 
 The remainder of the name describes the purpose of the I-D, usually in
@@ -193,20 +193,20 @@ with a hyphen. The initial version of an I-D must be `00`, and
 subsequent updates must increment the version number by one.
 
 If the I-D is submitted as XML (which is highly recommended), the name
-and version of the document will be declared in the “value” attribute of
-a [“seriesInfo”
+and version of the document will be declared in the "value" attribute of
+a ["seriesInfo"
 element](https://www.rfc-editor.org/rfc/rfc7991.html#section-2.47). The
 filename submitted must have a `.xml` extension.
 
 If the I-D is submitted as plain text (which is not recommended), the
-name and version will appear on the document’s first page, and the
+name and version will appear on the document's first page, and the
 filename submitted must must have a `.txt` extension.
 
 A popular convention is that an individual submission seeking adoption
-by a working group will include the working group’s acronym just after
+by a working group will include the working group's acronym just after
 the second component. For example, a person or group identified as
-“authors” seeking to get a document about “specific-subject” adopted by
-the “wgname” working group might choose the name
+"authors" seeking to get a document about "specific-subject" adopted by
+the "wgname" working group might choose the name
 `draft-authors-wgname-specific-subject`, and submit the file
 `draft-authors-wgname-specific-subject-00.xml`. If the document is later
 adopted by the working group, the authors will usually create a new I-D
@@ -217,7 +217,7 @@ of the individual draft were posted before adoption.
 
 ## The Submission Process
 
-Internet-Draft submissions are made using the [IETF Datatracker’s
+Internet-Draft submissions are made using the [IETF Datatracker's
 submission tool](https://datatracker.ietf.org/submit). An I-D submission
 should be an [xml2rfc version 3](https://rfc-editor.org/info/rfc7991)
 XML source file, but a [version 2
@@ -232,8 +232,8 @@ it in the Archive.
 
 If an XML submission is not possible, the draft can be submitted as
 plaintext and will be taken as the authoritive version. If XML is
-submittted, a plaintext version can also be submitted as an “alternate
-form” of the draft.
+submittted, a plaintext version can also be submitted as an "alternate
+form" of the draft.
 
 In addition, it is currently possible to submit PDF and/or PostScript
 versions of the document. They are kept with the authoritative document
@@ -328,7 +328,7 @@ submissions is discussed in the [Format section](#format) below.
     -   Security Considerations
     -   IANA Considerations
     -   References
-    -   Authors’ Addresses
+    -   Authors' Addresses
 -   [ ] If the document uses [BCP
     14](https://www.rfc-editor.org/info/bcp14) normative language,
     ensure the unchanged boilerplate text from [BCP
@@ -344,12 +344,12 @@ described in the latter document. Please use the boilerplate text
 8174](https://rfc-editor.org/info/rfc8174).
 
 -   [ ] If the I-D intends to obsolete or update existing RFCs, ensure
-    there is a “Summary of Changes” section.
+    there is a "Summary of Changes" section.
 
 #### IPR-Related Notices
 
 [BCP 78](https://www.rfc-editor.org/info/bcp78) and [BCP
-79](https://www.rfc-editor.org/info/bcp79) specify the IETF’s
+79](https://www.rfc-editor.org/info/bcp79) specify the IETF's
 Intellectual Property policies. Among them is a requirement to include
 certain standardized text in each Internet-Draft. This text is managed
 by the IAB, see the [current acceptable boilerplate
@@ -391,7 +391,7 @@ add a selection for the author.
 ##### Limiting Modifications and Derivative Works
 
 If the submitter of a non-IETF stream I-D desires to eliminate the
-IETF’s right to make modifications and derivative works of the I-D, one
+IETF's right to make modifications and derivative works of the I-D, one
 of two notices must be included after the IPR statement.
 
 The first choice is used if the contributor intends for the I-D to be
@@ -466,8 +466,8 @@ An abstract should be complete in itself, so it should not contain
 citations unless they are completely defined within the abstract.
 Abbreviations appearing in the abstract should generally be expanded in
 parentheses. There is a set of reasonable exceptions to this rule; for
-example, readers don’t need to be reminded of what “IP” or “TCP” or
-“HTTP” means. The RFC Editor maintains a [list of approved
+example, readers don't need to be reminded of what "IP" or "TCP" or
+"HTTP" means. The RFC Editor maintains a [list of approved
 abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt)
 that do not need to be expanded. In the end, this is a judgment call,
 but please err on the side of explicitness.
@@ -478,7 +478,7 @@ but please err on the side of explicitness.
 -   [ ] If the I-D intends to obsolete or update a previous RFC, ensure
     the abstract says so explicitly.
 
-The RFC Editor’s [Style Guide](https://www.rfc-editor.org/styleguide/)
+The RFC Editor's [Style Guide](https://www.rfc-editor.org/styleguide/)
 includes further guidance about writing an abstract.
 
 #### Introduction
@@ -495,8 +495,8 @@ is mandatory in all documents.
 The text of this section must have a meaningful exploration of security
 issues raised by the proposal, which should include both risks and a
 description of solutions or workarounds. It is rare that technical work
-can legitimately make a claim like “This protocol introduces no security
-considerations,” so it needs to be fairly obvious for that to be
+can legitimately make a claim like "This protocol introduces no security
+considerations," so it needs to be fairly obvious for that to be
 believable, or the document will be returned for further development.
 Procedural documents, however, more commonly can claim no added security
 risk.
@@ -525,8 +525,8 @@ Some other references that may be useful when crafting this section are:
 
 IANA is the [Internet Assigned Numbers Authority](https://www.iana.org/)
 and provides global coordination of the DNS root, IP addressing, and
-many other Internet protocol resources for the IETF. The “IANA
-Considerations” section must be present in a document and enumerate any
+many other Internet protocol resources for the IETF. The "IANA
+Considerations" section must be present in a document and enumerate any
 actions IANA must take upon publication of the document as an RFC.
 
 -   [ ] Verify this section contains clear instructions if IANA is
@@ -542,8 +542,8 @@ actions IANA must take upon publication of the document as an RFC.
     protocol parameters. Individual RFCs have specific criteria and
     instructions that should be followed.
 
--   [ ] If the registration policy is “Expert Review” or “Specification
-    Required” and/or requires mailing list review, as soon as the
+-   [ ] If the registration policy is "Expert Review" or "Specification
+    Required" and/or requires mailing list review, as soon as the
     requested parameter information is properly formed, consider
     initiating reviews with IANA or sending to the appropriate mailing
     list (where applicable; see the RFC for that the registry for
@@ -553,8 +553,8 @@ actions IANA must take upon publication of the document as an RFC.
     publication), please contact IANA.
 
 -   [ ] If registrations are needed early for registries with
-    “Specification Required”, “RFC Required”, “IETF Review”, or
-    “Standards Action” policies, consider using the early allocation
+    "Specification Required", "RFC Required", "IETF Review", or
+    "Standards Action" policies, consider using the early allocation
     process defined in [RFC 7120](https://rfc-editor.org/info/rfc7120).
 
 -   [ ] Verify this section explicitly and clearly identifies any
@@ -565,7 +565,7 @@ actions IANA must take upon publication of the document as an RFC.
     request an early review of the document by IANA.
 
 -   [ ] If there is no action for IANA, verify that this section
-    explicitly says “This document has no IANA actions.” It is often
+    explicitly says "This document has no IANA actions." It is often
     helpful for the IANA Considerations section to remain in place upon
     publication as an RFC even if there are no actions.
 
@@ -592,7 +592,7 @@ the motivation and changes.
 #### References
 
 A references section must be present and split into normative and
-informative sections. For guidance, see the RFC Editor’s [Style
+informative sections. For guidance, see the RFC Editor's [Style
 Guide](https://www.rfc-editor.org/styleguide/) and the [IESG Statement
 on Normative and Informative
 References](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/).
@@ -613,7 +613,7 @@ standards, per [RFC 2026](https://rfc-editor.org/info/rfc2026).
 
 A bare URI is not generally considered a stable reference. For web-only
 documents, adding a reference number, title , and/or an author will help
-make the reference more stable. See the RFC Editor’s [Style
+make the reference more stable. See the RFC Editor's [Style
 Guide](https://www.rfc-editor.org/styleguide/) for specific guidance
 about URIs in Internet-Drafts. Judgment can be used here; the stability
 of normative references is even more important than the stability of
@@ -625,7 +625,7 @@ published as RFCs. They may in some cases become a [cluster of
 documents](https://www.rfc-editor.org/about/clusters/) that will be
 published as RFCs simultaneously.
 
-#### Authors’ Addresses
+#### Authors' Addresses
 
 -   [ ] Verify that the I-D contains a section giving the name and
     contact information (postal mail, phone, and/or email) for the
@@ -648,7 +648,7 @@ Per [RFC 7322](https://rfc-editor.org/info/rfc7322):
 > consider if one or two editors should have primary responsibility for
 > this document, with the other individuals listed in the Contributors
 > or Acknowledgements section. There must be a direct correlation of
-> authors and editors in the document header and the Authors’ Addresses
+> authors and editors in the document header and the Authors' Addresses
 > section. These are the individuals that must sign off on the document
 > during the AUTH48 process and respond to inquiries, such as errata.
 
@@ -669,7 +669,7 @@ Recommended, Elective, or Restricted in the I-D title. An I-D may
 indicate its intended status, if it were to be published as an RFC, by
 setting the `status` attribute of the `seriesInfo` XML element (see [RFC
 7322](https://rfc-editor.org/info/rfc7322)) or by placing the words
-“Intended status: \<status>” on the left side of the headers in the
+"Intended status: \<status>" on the left side of the headers in the
 first page if preparing a plaintext submission.
 
 #### Use of BCP 14 Terms
@@ -751,7 +751,7 @@ W3C XML Schema Definition Language 1.1
     intended to be valid, confirm that it validates against the
     appropriate definition.
 
-XML provides structures, such as the “`<any>`” element information item
+XML provides structures, such as the "`<any>`" element information item
 in XML Schema, to allow element extensions.
 
 -   [ ] Ensure the I-D contains clear guidance on how, when, and where
@@ -782,9 +782,9 @@ considerations](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines).
 
 Addresses used in examples should use fully qualified domain names
 instead of literal IP addresses, and should use example FQDNs such as
-“foo.example.com” instead of real-world FQDNs. See [RFC
+"foo.example.com" instead of real-world FQDNs. See [RFC
 2606](https://rfc-editor.org/info/rfc2606) for example domain names that
-can be used. Note that the entire “.example” TLD is reserved, allowing
+can be used. Note that the entire ".example" TLD is reserved, allowing
 for arbitrary subdomains (in particular, ones that are not considered
 same-origin on the Web.
 
@@ -866,7 +866,7 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 -   [ ] If text fields are included in some calculations, like matching,
     sorting, etc., verify that how those operations are applied to the
     Unicode/ISO 10646 character set are described in detail. See
-    [“stringprep”](https://rfc-editor.org/info/rfc8264) for more
+    ["stringprep"](https://rfc-editor.org/info/rfc8264) for more
     information on the recommended way of handling comparisons.
 
 #### Inclusive Language
@@ -898,7 +898,7 @@ preparing plaintext documents should fully understand the requirements
 in [RFC 7994](https://rfc-editor.org/info/rfc7994), [RFC
 7841](https://rfc-editor.org/info/rfc7841), [RFC
 7332](https://rfc-editor.org/info/rfc7332), [RFC
-7322](https://rfc-editor.org/info/rfc7322), the RFC Editor’s [Style
+7322](https://rfc-editor.org/info/rfc7322), the RFC Editor's [Style
 Guide](https://www.rfc-editor.org/styleguide/), and the [current
 acceptable boilerplate
 texts](https://www.iab.org/documents/headers-boilerplate/).
@@ -921,8 +921,8 @@ overlooked:
 -   [ ] Verify that the document name and version appears on the first
     page.
 
--   [ ] Verify that the I-D contains a “Table of Contents” section
-    between the “Copyright Notice” and the introduction. This section
+-   [ ] Verify that the I-D contains a "Table of Contents" section
+    between the "Copyright Notice" and the introduction. This section
     must not be numbered.
 
 -   [ ] Verify that no text extends beyond the 72nd column of a line.
@@ -935,7 +935,7 @@ overlooked:
 -   [ ] Verify that the text is ragged-right.
 
 -   [ ] Verify that hyphenation is not used for line breaks. However,
-    hyphenated words (e.g., “Internet-Draft”) may be split at the hyphen
+    hyphenated words (e.g., "Internet-Draft") may be split at the hyphen
     across successive lines.
 
 -   [ ] Verify that the I-D contains no footnotes.
@@ -951,7 +951,7 @@ overlooked:
     require listing the Unicode codepoint by number in addition to the
     character itself.
 
--   [ ] Verify that the “Status of This Memo” and “Abstract” sections
+-   [ ] Verify that the "Status of This Memo" and "Abstract" sections
     are not numbered.
 
 -   [ ] Verify that the appropriate boilerplate text in the IPR-related
@@ -963,13 +963,13 @@ overlooked:
 -   [ ] Verify that the I-D is well formatted for readability and
     clarity.
 
--   [ ] If the I-D has “Contributors” and/or “Acknowlegments” sections,
+-   [ ] If the I-D has "Contributors" and/or "Acknowlegments" sections,
     verify that the sections are unnumbered and placed after the
-    “References” section and any appendices. See Section 4 of [RFC
+    "References" section and any appendices. See Section 4 of [RFC
     7322](https://rfc-editor.org/info/rfc7322).
 
 -   [ ] Verify that references to Internet-Drafts and RFCs are formatted
-    as shown in the “web portion” of the RFC Editor’s Style Guide (see
+    as shown in the "web portion" of the RFC Editor's Style Guide (see
     [here](https://www.rfc-editor.org/styleguide/part2/#ref_ids) for
     guidance on I-Ds and
     [here](https://www.rfc-editor.org/part2/#ref_rfcs) for guidance on
