@@ -1,5 +1,4 @@
 {
-    "group": "tcpm",
-    "repo_type": "specs",
-    "revisions_tagged": true
+    "group": "ietf",
+    "repo_type": "docs",
 }
