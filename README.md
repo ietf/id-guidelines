@@ -53,7 +53,6 @@ As Internet-Drafts may be eventually published as RFCs, it is recommended to
 consult the [RFC Editor's publication
 process](https://www.rfc-editor.org/pubprocess/).
 
-
 ## Internet-Draft Names
 
 The characters that may appear in an I-D name are restricted:
@@ -244,7 +243,6 @@ message may contain the I-D as an attachment, or a URL that will resolve to the
 I-D. The I-D must be a standalone document in either XML or plaintext format.
 Multiple files presented in containers such as zip or tar will not be accepted.
 All other formats will be discarded without opening.
-
 
 ## After Submission
 
@@ -821,8 +819,9 @@ consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).
 The IESG has made a
 [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/)
 recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366)
-for guidelines on using inclusive terminology. Similar guidance pointing to [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) exists for other
-RFC Streams. Authors are encouraged to familiarize themselves with and apply the
+for guidelines on using inclusive terminology. Similar guidance pointing to
+[NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) exists for other RFC
+Streams. Authors are encouraged to familiarize themselves with and apply the
 guidance.
 
 ## Format
