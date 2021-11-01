@@ -356,8 +356,8 @@ that grants the IETF the rights to produce derivative works. There are very rare
 cases where it is acceptable to not do so, [as detailed
 here](#limiting-modifications-and-derivative-works).
 
-Any Internet-Draft submitted that does not select one of the required IPR
-boilerplate statements cannot be submitted.
+Authors of IETF stream documents must not select boilerplate that prohibits
+publication as an RFC.```
 
 Authors preparing plaintext submissions must carefully reproduce the
 text most appropriate for their Internet-Draft. They must also include the
