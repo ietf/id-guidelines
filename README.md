@@ -357,7 +357,7 @@ cases where it is acceptable to not do so, [as detailed
 here](#limiting-modifications-and-derivative-works).
 
 Authors of IETF stream documents must not select boilerplate that prohibits
-publication as an RFC.```
+publication as an RFC.
 
 Authors preparing plaintext submissions must carefully reproduce the
 text most appropriate for their Internet-Draft. They must also include the
