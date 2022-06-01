@@ -340,7 +340,7 @@ Trust, see [TLP Section
 
 If you think that you, your company, or anyone else owns a patent or other
 Intellectual Property Rights (IPR) on the work described in the I-D, you should
-carefully read [BCP 79](https://www.rfc-editor.org/info/bcp79). The part of the
+carefully read [BCP 79](https://www.rfc-editor.org/info/bcp79). The first part of the
 required standardized text in an I-D obligates you to send an
 IPR disclosure statement under many circumstances.
 
